@@ -20,11 +20,11 @@ body {
   justify-content: space-between;
 }
 
-.flex-container .logo a{
-    color: #6070FF;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
+.flex-container .logo a {
+  color: #6070ff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .intro {
