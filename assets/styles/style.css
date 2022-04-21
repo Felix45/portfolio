@@ -60,6 +60,11 @@ body {
   line-height: 52px;
 }
 
-.intro .social-icons img {
-  margin-right: 20px;
+.intro .social-icons ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.intro .social-icons ul li {
+  margin: 0 20px 0 0;
 }
