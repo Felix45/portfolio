@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "\"This is my professional portfolio outlining previous projects\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felix45/portfolio.git"
+  },
+  "author": "\"Felix Ouma\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felix45/portfolio/issues"
+  },
+  "homepage": "https://github.com/Felix45/portfolio#readme",
+  "devDependencies": {
+    "hint": "^6.1.11"
+  }
+}
