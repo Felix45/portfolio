@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ```
 ### Setup
-Clone the repository and change the directory to hello-microverse
+Clone the repository and change the directory to portfolio
 
 ``` 
   $ git clone git@github.com:Felix45/portfolio.git
@@ -74,7 +74,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to [Microverse](https://bit.ly/MicroverseTN) for giving me this project to work on and [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1), for using their design.
 
 ## 📝 License
 
