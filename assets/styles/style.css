@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
   padding: 0;
@@ -10,6 +10,10 @@ body {
   color: #172b4d;
   background-color: #e5e5e5;
   font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .flex-container {
@@ -60,6 +64,17 @@ body {
   line-height: 52px;
 }
 
+.grid-item ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.grid-item .project-role li {
+  color: #7a869a;
+  margin-left: 35px;
+  font-weight: 600;
+}
+
 .intro .social-icons ul {
   display: flex;
   list-style-type: none;
@@ -67,4 +82,79 @@ body {
 
 .intro .social-icons ul li {
   margin: 0 20px 0 0;
+}
+
+.grid-container {
+  display: grid;
+  margin: 114px 24px 0;
+  padding: 16px;
+  border-radius: 16px;
+  grid-template-columns: auto;
+  column-gap: 88px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item .project-role::before {
+  content: "CANOPY";
+  font-weight: bold;
+}
+
+.grid-item .project-role li::before {
+  content: " ";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 8px;
+  background-color: #c1c7d0;
+}
+
+.grid-item .card-image img {
+  width: 100%;
+}
+
+.grid-item .card-description h2 {
+  margin: 12px 0;
+  font-size: 32px;
+}
+
+.grid-item .tags {
+  display: flex;
+  margin-top: 16px;
+}
+
+.grid-item .tags a {
+  color: #396df2;
+  font-weight: 500;
+  padding: 4px 12px 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 8px 20px 40px 0;
+}
+
+.grid-item .card-description p {
+  margin: 20px 0;
+}
+
+.btn {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  color: #396df2;
+  padding: 12px 16px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 16px;
+  margin: 40px 0 20px;
+  background-color: #fff;
+  border: 1px solid #396df2;
 }
