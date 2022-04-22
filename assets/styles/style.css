@@ -154,7 +154,7 @@ p {
 
 .btn {
   display: flex;
-  width: 150px;
+  width: max-content;
   align-items: center;
   justify-content: center;
   color: #7f8cff;
