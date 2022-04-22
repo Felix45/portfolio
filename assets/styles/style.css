@@ -96,12 +96,12 @@ p {
   flex-direction: column;
   padding: 16px;
   margin: 88px 0 0;
-  background-color: #fff;
 }
 
 .grid-item.card {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  background-color: #fff;
 }
 
 .grid-item .project-role::before {
@@ -157,18 +157,34 @@ p {
   width: 150px;
   align-items: center;
   justify-content: center;
-  color: #396df2;
+  color: #7f8cff;
   padding: 12px 16px;
   font-size: 17px;
   font-weight: 500;
   border-radius: 16px;
   margin: 40px 0 20px;
   background-color: #fff;
-  border: 1px solid #396df2;
+  border: 1px solid #7f8cff;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn:focus {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+.btn.disabled {
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
 }
 
 .about-me {
-  margin: 114px 0;
+  margin: 114px 0 0 0;
   background-color: #fff;
   padding-bottom: 114px;
   border-top-right-radius: 120px;
