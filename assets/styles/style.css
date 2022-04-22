@@ -46,6 +46,7 @@ a {
   color: #7f8cff;
   font-size: 16px;
   font-weight: 500;
+  margin: 12px 0;
 }
 
 .intro > div {
@@ -53,8 +54,8 @@ a {
   width: calc(100% - 48px);
 }
 
-.intro p {
-  margin: 12px auto;
+p {
+  margin: 12px 0;
 }
 
 .title {
@@ -62,6 +63,15 @@ a {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
+}
+
+.social-icons ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.social-icons ul li {
+  margin: 0 20px 0 0;
 }
 
 .grid-item ul {
@@ -75,29 +85,23 @@ a {
   font-weight: 600;
 }
 
-.intro .social-icons ul {
-  display: flex;
-  list-style-type: none;
-}
-
-.intro .social-icons ul li {
-  margin: 0 20px 0 0;
-}
-
 .grid-container {
   display: grid;
-  margin: 114px 24px 0;
-  padding: 16px;
-  border-radius: 16px;
+  margin: 26px 24px 0;
   grid-template-columns: auto;
-  column-gap: 88px;
-  background-color: #fff;
-  border: 1px solid #dfe1e6;
 }
 
 .grid-item {
   display: flex;
   flex-direction: column;
+  padding: 16px;
+  margin: 88px 0 0;
+  background-color: #fff;
+}
+
+.grid-item.card {
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
 }
 
 .grid-item .project-role::before {
@@ -140,6 +144,10 @@ a {
   margin: 8px 20px 40px 0;
 }
 
+.grid-item a:hover {
+  text-decoration: underline;
+}
+
 .grid-item .card-description p {
   margin: 20px 0;
 }
@@ -157,4 +165,60 @@ a {
   margin: 40px 0 20px;
   background-color: #fff;
   border: 1px solid #396df2;
+}
+
+.about-me {
+  margin: 114px 0;
+  background-color: #fff;
+  padding-bottom: 114px;
+  border-top-right-radius: 120px;
+}
+
+.about-me ul {
+  list-style-type: none;
+}
+
+.about-me .menu {
+  margin: 0 36px;
+  width: calc(100% - 72px);
+}
+
+.about-me .menu li a {
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about-me .menu li ul {
+  display: flex;
+  margin: 36px 0;
+  flex-direction: column;
+}
+
+.about-me .menu li ul li a {
+  color: #253858;
+  display: flex;
+  padding: 10px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f7f7f9;
+}
+
+.about-me .menu .closed {
+  margin: 24px 0;
+  font-weight: 500;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #dfe1e6;
+  background: url("../images/chevron-right.svg") no-repeat calc(100% - 64px) center;
+}
+
+.about-me .menu .open {
+  background: url("../images/carret.svg") no-repeat calc(100% - 64px) 0;
+}
+
+.about-me .menu li ul li a img {
+  margin-right: 16px;
 }
