@@ -144,10 +144,6 @@ p {
   margin: 8px 20px 40px 0;
 }
 
-.grid-item a:hover {
-  text-decoration: underline;
-}
-
 .grid-item .card-description p {
   margin: 20px 0;
 }
