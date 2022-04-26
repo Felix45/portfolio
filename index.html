@@ -220,15 +220,40 @@
             </div>
         </section>
 
-        <section class="contact__me__section">
-       <div class="contact__me">
-         <h3 class="contact__me__title">Contact Me</h3>
-         <p class="contact__me__text">
+      <section class="grid-container contact-me">
+       <div class="grid-item contact">
+         <h3 class="contact-title text-center">Contact me</h3>
+         <p class="contact-description text-center">
              If you have an application you are interested in developing,
              a feature that you need built or a project that needs coding.
              I’d love to help with it
          </p>
 
+         <form method="post" action="https://formspree.io/f/mvolvape">
+             <div>
+                <label for="username">
+                    <input type="text" name="username" id="username" value="" placeholder="Name" maxlength="30" required/>
+                </label>
+             </div>
+
+             <div>
+                <label for="emailaddress">
+                    <input type="email" name="emailaddress" id="emailaddress" value="" placeholder="example@gmail.com" required/>
+                </label>
+             </div>
+
+             <div>
+                 <label for="message">
+                     <textarea name="message" id="message" maxlength="500" placeholder="Write your message here ..." required></textarea>
+                 </label>
+             </div>
+
+             <div>
+                 <button class="btn btn-up" type="submit">Get In Touch</button>
+             </div>
+
+         </form>
+        </div>
          
        </section>
     </main>
