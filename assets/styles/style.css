@@ -129,8 +129,8 @@ p {
   font-size: 32px;
 }
 
-.grid-item .tags {
-  display: flex;
+.grid-item .tags li {
+  float: left;
   margin-top: 16px;
 }
 
