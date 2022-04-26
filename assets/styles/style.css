@@ -148,6 +148,54 @@ p {
   margin: 20px 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.contact-me {
+  margin: -114px 0 0 0;
+  color: #fff;
+  height: 779px;
+  border-top-left-radius: 100px;
+  background: #6070ff url('../images/contact-form-shapes-mobile.svg') no-repeat 100% 22px;
+  background-size: 57%;
+}
+
+.contact-me .contact {
+  margin: 72px 0;
+}
+
+.contact-me .contact-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contact-me .contact-description {
+  font-size: 20px;
+  font-weight: 400;
+  width: 327px;
+  margin: 0 auto 40px auto;
+}
+
+.contact-me input,
+.contact-me textarea {
+  width: 100%;
+  color: #172b4d;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 15px 38px 15px 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-me textarea {
+  color: #b3bac5;
+  height: 140px;
+  margin-bottom: 22px;
+}
+
 .btn {
   display: flex;
   width: max-content;
@@ -157,10 +205,14 @@ p {
   padding: 12px 16px;
   font-size: 17px;
   font-weight: 500;
-  border-radius: 16px;
+  border-radius: 8px;
   margin: 40px 0 20px;
   background-color: #fff;
   border: 1px solid #7f8cff;
+}
+
+.btn-up {
+  margin-top: -5px;
 }
 
 .btn:hover {
@@ -182,7 +234,7 @@ p {
 .about-me {
   margin: 114px 0 0 0;
   background-color: #fff;
-  padding-bottom: 114px;
+  padding-bottom: 214px;
   border-top-right-radius: 120px;
 }
 
