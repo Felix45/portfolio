@@ -75,7 +75,10 @@ p {
 }
 
 .grid-item ul {
-  display: flex;
+  float:left;
+  content: "";
+  display: table;
+  clear: both;
   list-style-type: none;
 }
 
