@@ -75,11 +75,12 @@ p {
 }
 
 .grid-item ul {
-  float:left;
-  content: "";
-  display: table;
-  clear: both;
   list-style-type: none;
+}
+.grid-item .project-role {
+  display: flex;
+  clear: both;
+  
 }
 
 .grid-item .project-role li {
