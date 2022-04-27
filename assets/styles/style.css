@@ -153,6 +153,7 @@ p {
 }
 
 .contact-me {
+  position: relative;
   margin: -114px 0 0 0;
   color: #fff;
   height: 779px;
@@ -194,6 +195,17 @@ p {
   color: #b3bac5;
   height: 140px;
   margin-bottom: 22px;
+}
+
+.contact-me .status-bar {
+  height: 5px;
+  width: 134px;
+  margin: auto;
+  position: absolute;
+  bottom: 8px;
+  border-radius: 10px;
+  left: calc(50% - 67px);
+  background: #0d151e;
 }
 
 .btn {
