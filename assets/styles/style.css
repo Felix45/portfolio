@@ -17,11 +17,19 @@ a {
 }
 
 .flex-container {
-  height: 48px;
   display: flex;
   padding: 14px 24px;
   background-color: #fff;
   justify-content: space-between;
+}
+
+.flex-item-row {
+  flex: 1;
+  width: 100%;
+}
+
+.flex-container header{
+  height: 48px;
 }
 
 .flex-container .logo a {
@@ -164,7 +172,6 @@ p {
 
 .contact-me .contact {
   margin: 72px 0;
-  padding: 0 24px;
 }
 
 .contact-me .contact-title {
