@@ -161,17 +161,20 @@ p {
 }
 
 .contact-me {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin: -114px 0 0 0;
   color: #fff;
   height: 779px;
-  flex-direction: column;
   border-top-left-radius: 100px;
   background: #6070ff;
 }
 
 .contact-me .contact {
   margin: 72px 0;
+  flex-direction: column;
+  background-color: transparent;
 }
 
 .contact-me .contact-title {
