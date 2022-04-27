@@ -17,11 +17,19 @@ a {
 }
 
 .flex-container {
-  height: 48px;
   display: flex;
   padding: 14px 24px;
   background-color: #fff;
   justify-content: space-between;
+}
+
+.flex-item-row {
+  flex: 1;
+  width: 100%;
+}
+
+.flex-container header {
+  height: 48px;
 }
 
 .flex-container .logo a {
@@ -148,6 +156,108 @@ p {
   margin: 20px 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: -114px 0 0 0;
+  color: #fff;
+  height: 779px;
+  border-top-left-radius: 100px;
+  background: #6070ff;
+}
+
+.contact-me .contact {
+  margin: 72px 0;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.contact-me .contact-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.contact-me .contact-description {
+  font-size: 20px;
+  font-weight: 400;
+  width: 327px;
+  color: #ebebff;
+  margin: 0 auto 40px auto;
+}
+
+.contact-me input,
+.contact-me textarea {
+  width: 100%;
+  color: #172b4d;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  background-color: #fff;
+  padding: 15px 38px 15px 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-me textarea {
+  color: #b3bac5;
+  height: 140px;
+  margin-bottom: -5px;
+}
+
+.contact-me .status-bar {
+  height: 5px;
+  width: 134px;
+  margin: auto;
+  position: absolute;
+  bottom: 8px;
+  border-radius: 10px;
+  left: calc(50% - 67px);
+  background: #0d151e;
+}
+
+.contact-me .form-header-bg {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  right: 0;
+  top: 22px;
+}
+
+.contact-me .form-header-bg .left-background-sprite {
+  width: 65px;
+  height: 112px;
+  background: url('../images/contact-form-shapes-mobile.svg') no-repeat -157px -1px;
+}
+
+.contact-me .form-header-bg .center-background-sprite {
+  background: url('../images/contact-form-shapes-mobile.svg') no-repeat 0 -34px;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  right: 50%;
+  top: 33px;
+}
+
+.contact-me .form-footer-bg {
+  width: 95%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.contact-me .form-footer-bg div {
+  width: 71px;
+  height: 60px;
+  background: url('../images/contact-form-shapes-mobile.svg') no-repeat -105px -643px;
+}
+
 .btn {
   display: flex;
   width: max-content;
@@ -157,10 +267,15 @@ p {
   padding: 12px 16px;
   font-size: 17px;
   font-weight: 500;
-  border-radius: 16px;
+  border-radius: 8px;
   margin: 40px 0 20px;
   background-color: #fff;
   border: 1px solid #7f8cff;
+}
+
+.btn-up {
+  margin-top: 22px;
+  font-weight: 700;
 }
 
 .btn:hover {
@@ -182,7 +297,7 @@ p {
 .about-me {
   margin: 114px 0 0 0;
   background-color: #fff;
-  padding-bottom: 114px;
+  padding-bottom: 214px;
   border-top-right-radius: 120px;
 }
 
