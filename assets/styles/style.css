@@ -246,6 +246,7 @@ p {
   width: 95%;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .contact-me .form-footer-bg div {
@@ -270,7 +271,7 @@ p {
 }
 
 .btn-up {
-  margin-top: -5px;
+  margin-top: 22px;
   font-weight: 700;
 }
 
