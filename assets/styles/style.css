@@ -507,4 +507,29 @@ p {
   .flex-item-4 {
     order: 4;
   }
+  .grid-container.about-me {
+    width: 80%;
+    margin: 114px auto 0 auto;
+    grid-template-columns: 50% 50%;
+  }
+
+  .about-me .menu li ul{
+    flex-direction: row;
+  }
+
+  .about-me .menu li ul li a {
+    gap: 12px;
+    width: 122px;
+    height: 120px;
+    font-size: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 62px 12px 12px;
+  }
+
+  .grid-container.about-me .grid-item {
+    margin: 0;
+    padding-top: 0;
+  }
+
 }
