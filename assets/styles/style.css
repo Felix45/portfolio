@@ -495,6 +495,10 @@ p {
     margin: 114px auto 0 auto;
   }
 
+  .project-cards .grid-item.flex-item-last {
+    margin-bottom: 114px;
+  }
+
   .project-cards .grid-item.card div{
     width: 50%;
   }
