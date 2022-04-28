@@ -518,7 +518,7 @@ p {
   .grid-container.about-me {
     width: 80%;
     margin: 114px auto 0 auto;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 42% 68%;
   }
 
   .about-me .menu li ul{
