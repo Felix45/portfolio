@@ -73,13 +73,23 @@ p {
   line-height: 52px;
 }
 
-.social-icons ul {
+.social-icons ul, .menu ul {
   display: flex;
   list-style-type: none;
 }
 
 .social-icons ul li {
   margin: 0 20px 0 0;
+}
+.menu ul {
+  display: none;
+}
+.menu ul li{
+  margin: 0 32px 0 0;
+}
+.menu ul li a{
+  color: #344563;
+  font-weight: 500;
 }
 
 .grid-item ul {
@@ -348,4 +358,20 @@ p {
 
 .about-me .menu li ul li a img {
   margin-right: 16px;
+}
+
+@media screen and (min-width: 767px){
+  body{
+    background-color: #fff;
+  }
+  header {
+    width: calc(100% - 310px);
+    margin: auto;
+  }
+  .menu .menu-icon{
+    display: none;
+  }
+  .menu ul {
+    display: flex;
+  }
 }
