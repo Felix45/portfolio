@@ -540,4 +540,40 @@ p {
     padding-top: 0;
   }
 
+  .contact-me .contact-description {
+    width: 40%;
+  }
+
+  .contact-me .form-footer-bg {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-me .form-footer-bg div {
+    left: 75px;
+    bottom: 52%;
+    position: absolute;
+  }
+
+  .contact-me form {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+  }
+
+  .contact-me .form-header-bg .center-background-sprite {
+    top: 60px;
+    right: 65%;
+  }
+
+  .contact-me .form-header-bg .left-background-sprite{
+    width: 147px;
+	  height: 163px;
+    right: 74px;
+    top: 40px;
+    position: absolute;
+    background: url('../images/contact-form-background-shapes.svg') no-repeat -1136px 0;;
+  }
 }
