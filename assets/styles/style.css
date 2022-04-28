@@ -486,6 +486,8 @@ p {
   .project-cards .grid-item {
     flex-direction: row;
     gap: 46px;
+    width: 80%;
+    margin: 114px auto 0 auto;
   }
 
   .project-cards .grid-item.card div{
@@ -507,6 +509,7 @@ p {
   .flex-item-4 {
     order: 4;
   }
+
   .grid-container.about-me {
     width: 80%;
     margin: 114px auto 0 auto;
