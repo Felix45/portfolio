@@ -32,6 +32,11 @@ a {
   height: 48px;
 }
 
+.menu ul li a {
+  color: #344563;
+  font-weight: 500;
+}
+
 .flex-container .logo a {
   color: #6070ff;
   font-size: 18px;
@@ -73,7 +78,8 @@ p {
   line-height: 52px;
 }
 
-.social-icons ul, .menu ul {
+.social-icons ul,
+.menu ul {
   display: flex;
   list-style-type: none;
 }
@@ -81,16 +87,14 @@ p {
 .social-icons ul li {
   margin: 0 20px 0 0;
 }
-.menu ul, .intro-section-bg {
+
+.menu ul,
+.intro-section-bg {
   display: none;
 }
 
-.menu ul li{
+.menu ul li {
   margin: 0 32px 0 0;
-}
-.menu ul li a{
-  color: #344563;
-  font-weight: 500;
 }
 
 .grid-item ul {
@@ -361,17 +365,20 @@ p {
   margin-right: 16px;
 }
 
-@media screen and (min-width: 767px){
-  body{
+@media screen and (min-width: 767px) {
+  body {
     background-color: #fff;
   }
+
   header {
     width: calc(100% - 310px);
     margin: auto;
   }
-  .menu .menu-icon{
+
+  .menu .menu-icon {
     display: none;
   }
+
   .menu ul {
     display: flex;
   }
@@ -395,14 +402,14 @@ p {
 
   .intro .intro-section-bg .bg-item-1 {
     background: url('../images/headerbg.svg') no-repeat 0 -21px;
-	  width: 122px;
-	  height: 108px;
+    width: 122px;
+    height: 108px;
   }
 
   .intro .intro-section-bg .bg-item-2 {
     background: url('../images/headerbg.svg') no-repeat -345px -46px;
-	  width: 15px;
-	  height: 15px;
+    width: 15px;
+    height: 15px;
     left: 26%;
     top: 17%;
     position: absolute;
@@ -410,8 +417,8 @@ p {
 
   .intro .intro-section-bg .bg-item-3 {
     background: url('../images/headerbg.svg') no-repeat -657px -121px;
-	  width: 57px;
-	  height: 40px;
+    width: 57px;
+    height: 40px;
     position: absolute;
     right: 48%;
     top: 162px;
@@ -421,19 +428,18 @@ p {
     background: url('../images/headerbg.svg') no-repeat -931px -34px;
     top: 100px;
     right: 30%;
-	  width: 39px;
-	  height: 39px;
+    width: 39px;
+    height: 39px;
     position: absolute;
   }
 
   .intro .intro-section-bg .bg-item-5 {
     width: 272px;
-	  height: 287px;
+    height: 287px;
     position: absolute;
     top: 60px;
-    right: 0px;
+    right: 0;
     background: url('../images/headerbg.svg') no-repeat -1112px 0;
-
   }
 
   .intro .intro-content {
