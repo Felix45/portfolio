@@ -89,7 +89,8 @@ p {
 }
 
 .menu ul,
-.intro-section-bg {
+.intro-section-bg,
+.intro-section-footer-bg {
   display: none;
 }
 
@@ -391,7 +392,8 @@ p {
     background-image: none;
   }
 
-  .intro .intro-section-bg {
+  .intro .intro-section-bg,
+  .intro .intro-section-footer-bg {
     display: flex;
     flex-direction: row;
   }
@@ -440,6 +442,41 @@ p {
     top: 60px;
     right: 0;
     background: url('../images/headerbg.svg') no-repeat -1112px 0;
+  }
+
+  .intro .intro-section-footer-bg .bg-footer-item-1 {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 5%;
+    bottom: 42%;
+    background: url('../images/headerbg.svg') no-repeat -39px -393px;
+  }
+
+  .intro .intro-section-footer-bg .bg-footer-item-2 {
+    background: url('../images/headerbg.svg') no-repeat -205px -650px;
+    width: 53px;
+	  height: 56px;
+    left: 16%;
+    bottom: 80px;
+    position: absolute;
+  }
+
+  .intro .intro-section-footer-bg .bg-footer-item-3 {
+    background: url('../images/headerbg.svg') no-repeat -685px -630px;;
+    width: 167px;
+	  height: 92px;
+    right: 39%;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .intro .intro-section-footer-bg .bg-footer-item-5 {
+    background: url('../images/headerbg.svg') no-repeat -1140px -525px;
+    width: 75px;
+    height: 103px;
+    right: 13%;
+    position: absolute;
   }
 
   .intro .intro-content {
