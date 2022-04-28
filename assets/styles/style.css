@@ -576,4 +576,13 @@ p {
     position: absolute;
     background: url('../images/contact-form-background-shapes.svg') no-repeat -1136px 0;;
   }
+
+  .contact-me form .circle-bg-item {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    right: 236px;
+    bottom: 32%;
+    background: url('../images/contact-form-background-shapes.svg') no-repeat -1054px -442px;
+  }
 }
