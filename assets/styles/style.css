@@ -585,4 +585,13 @@ p {
     bottom: 32%;
     background: url('../images/contact-form-background-shapes.svg') no-repeat -1054px -442px;
   }
+
+  .contact-me form .poly-bg-item {
+    background: url('../images/contact-form-background-shapes.svg') no-repeat -262px -662px;
+	  width: 67px;
+	  height: 51px;
+    position: absolute;
+    bottom: 73px;
+    left: 23%;
+  }
 }
