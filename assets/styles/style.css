@@ -483,6 +483,11 @@ p {
     width: calc(100% - 36%);
   }
 
+  .project-cards {
+    margin: 0 0 114px 0;
+    background-color: #e5e5e5;;
+  }
+
   .project-cards .grid-item {
     flex-direction: row;
     gap: 46px;
