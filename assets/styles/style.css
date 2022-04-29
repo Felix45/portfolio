@@ -31,6 +31,10 @@ a {
   justify-content: space-between;
 }
 
+.project-role-wrapper {
+  display: flex;
+}
+
 .flex-item-row {
   flex: 1;
   width: 100%;
@@ -137,8 +141,7 @@ p {
   background-color: #fff;
 }
 
-.grid-item .project-role::before {
-  content: "CANOPY";
+.grid-item .project-role-wrapper span {
   font-weight: bold;
 }
 
