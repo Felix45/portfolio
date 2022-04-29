@@ -11,19 +11,33 @@
 <body>
     <main>
         <header class="flex-container">
+          <div class="menu-wrapper">
             <div class="logo">
                 <a href="#">Felix Ouma</a>
             </div>
 
-            <nav>
-                <div>
+            <nav class="menu">
+                <div class="menu-icon">
                     <img src="assets/images/Union.svg" alt="Hambuger Menu" />
                 </div>
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
+          </div>
         </header>
         <section class="intro">
-            <div>
-                <h1 class="title">I’m Felix Glad to see you!</h1>
+            <div class="intro-section-bg">
+                <div class="bg-item-1"></div>
+                <div class="bg-item-2"></div>
+                <div class="bg-item-3"></div>
+                <div class="bg-item-4"></div>
+                <div class="bg-item-5"></div>
+            </div>
+            <div class="intro-content">
+                <h1 class="title">I’m Felix <br /> Glad to see you!</h1>
                 <p>
                     I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
                 </p>
@@ -59,68 +73,85 @@
                     </ul>
                 </div>
             </div>
+            <div class="intro-section-footer-bg">
+                <div class="bg-footer-item-1"></div>
+                <div class="bg-footer-item-2"></div>
+                <div class="bg-footer-item-3"></div>
+                <div class="bg-footer-item-4"></div>
+                <div class="bg-footer-item-5"></div>
+            </div>
         </section>
 
         <div class="grid-container project-cards">
-            <article class="grid-item card">
+            <article class="grid-item card flex-item-2">
                 <div class="card-image">
                     <img src="assets/images/tonic.svg" alt="Project One" />
                 </div>
                 <div class="card-description">
-                    <h2>Tonic</h2>
-                    <div>
+                    <h2>Facebook 360</h2>
+                    <div class="project-role-wrapper">
+                        <span>FACEBOOK</span>
                         <ul class="project-role">
-                            <li>Back End Dev</li>
+                            <li>Full Stack Dev</li>
                             <li>2015</li>
                         </ul>
                     </div>
                     <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                        Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
                     </p>
-                    <div>
+                    <div class="tags-wrapper">
                         <ul class="tags">
                             <li><a href="">html</a></li>
+                            <li class="hide-on-mobile"><a href="">Ruby on rails</a></li>
                             <li><a href="">css</a></li>
                             <li><a href="">javaScript</a></li>
                         </ul>
                     </div>
+                    <a href="" class="btn">See Project</a>
                 </div>
-                <a href="" class="btn">See Project</a>
             </article>
 
-            <article class="grid-item card">
-                <div class="card-image">
+            <article class="grid-item card flex-item-3 flex-item-last">
+                <div class="card-image flex-item-2">
                     <img src="assets/images/multi-stories-post.svg" alt="Project One" />
                 </div>
-                <div class="card-description">
-                    <h2>Multi-Post Stories</h2>
-                    <div>
+                <div class="card-description flex-item-1">
+                    <h2>Uber Navigation</h2>
+                    <div class="project-role-wrapper">
+                        <span>Uber</span>
                         <ul class="project-role">
-                            <li>Back End Dev</li>
-                            <li>2015</li>
+                            <li>Lead Developer</li>
+                            <li>2018</li>
                         </ul>
                     </div>
                     <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                        A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car..
                     </p>
-                    <div>
+                    <div class="tags-wrapper">
                         <ul class="tags">
                             <li><a href="">html</a></li>
+                            <li class="hide-on-mobile"><a href="">Ruby on rails</a></li>
                             <li><a href="">css</a></li>
                             <li><a href="">javaScript</a></li>
                         </ul>
                     </div>
+                    <a href="" class="btn">See Project</a>
                 </div>
-                <a href="" class="btn">See Project</a>
             </article>
 
             <article class="grid-item card">
                 <div class="card-image">
-                    <img src="assets/images/project-3.svg" alt="Project One" />
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="assets/images/snapshootportfolio.svg">
+                        <source media="(max-width: 767px)" srcset="assets/images/project-3.svg">
+                        <img src="assets/images/project-3.svg" alt="Project One" />
+                    </picture>
+                    
                 </div>
                 <div class="card-description">
                     <h2>Tonic</h2>
-                    <div>
+                    <div class="project-role-wrapper">
+                        <span>CANOPY</span>
                         <ul class="project-role">
                             <li>Back End Dev</li>
                             <li>2015</li>
@@ -129,47 +160,49 @@
                     <p>
                         A daily selection of privately personalized reads; no accounts or sign-ups required.
                     </p>
-                    <div>
+                    <div class="tags-wrapper">
                         <ul class="tags">
                             <li><a href="">html</a></li>
                             <li><a href="">css</a></li>
                             <li><a href="">javaScript</a></li>
                         </ul>
                     </div>
+                    <a href="" class="btn">See Project</a>
                 </div>
-                <a href="" class="btn">See Project</a>
             </article>
 
             <article class="grid-item card">
-                <div class="card-image">
+                <div class="card-image flex-item-2">
                     <img src="assets/images/project-4.svg" alt="Project One" />
                 </div>
-                <div class="card-description">
+                <div class="card-description flex-item-1">
                     <h2>Multi-Post Stories</h2>
-                    <div>
+                    <div class="project-role-wrapper">
+                        <span>FACEBOOK</span>
                         <ul class="project-role">
-                            <li>Back End Dev</li>
+                            <li>Full Stack Dev</li>
                             <li>2015</li>
                         </ul>
                     </div>
                     <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                        Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
                     </p>
-                    <div>
+                    <div class="tags-wrapper">
                         <ul class="tags">
                             <li><a href="">html</a></li>
+                            <li class="hide-on-mobile"><a href="">Ruby on rails</a></li>
                             <li><a href="">css</a></li>
                             <li><a href="">javaScript</a></li>
                         </ul>
                     </div>
+                    <a href="" class="btn">See Project</a>
                 </div>
-                <a href="" class="btn">See Project</a>
             </article>
         </div>
 
         <section class="grid-container about-me">
             <div class="grid-item">
-                <h2>About Myself</h2>
+                <h2>About <br /> Myself</h2>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
 
                 <p class="purple-text">LET'S CONNECT</p>
@@ -209,9 +242,9 @@
                 <ul class="menu">
                     <li class="open"><a href="#">Languages</a>
                         <ul class="submenu">
-                            <li><a href=""><img src="assets/images/js.svg" alt="JavaScript" /> JavaScript</a></li>
-                            <li><a href=""><img src="assets/images/html5.svg" alt="HTML" /> HTML</a></li>
-                            <li><a href=""><img src="assets/images/css.svg" alt="Cascading Stylesheet" /> CSS</a></li>
+                            <li><a href=""><img src="assets/images/js.svg" alt="JavaScript" /> <span>JavaScript</span></a></li>
+                            <li><a href=""><img src="assets/images/html5.svg" alt="HTML" /> <span>HTML</span></a></li>
+                            <li><a href=""><img src="assets/images/css.svg" alt="Cascading Stylesheet" /> <span>CSS</span></a></li>
                         </ul>
                     </li>
                     <li class="closed"><a href="#">Frameworks</a></li>
@@ -233,7 +266,7 @@
              I’d love to help with it
          </p>
 
-         <form method="post" action="https://formspree.io/f/mvolvape" class="flex-item-row">
+         <form method="post" action="https://formspree.io/f/mvolvape">
              <div class="flex-item-row">
                 <label for="username">
                     <input type="text" name="username" id="username" value="" placeholder="Name" maxlength="30" required/>
@@ -255,6 +288,8 @@
                 <div></div>
                 <button class="btn btn-up" type="submit">Get In Touch</button>
              </div>
+             <div class="circle-bg-item"></div>
+             <div class="poly-bg-item"></div>
          </form>
         </div>
         <div class="flex-item-row status-bar">
