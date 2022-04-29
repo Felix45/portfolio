@@ -373,7 +373,7 @@ p {
   }
 
   header {
-    width: calc(100% - 310px);
+    width: 75%;
     margin: auto;
   }
 
