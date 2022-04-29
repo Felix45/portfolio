@@ -472,7 +472,7 @@ p {
     width: 167px;
     height: 92px;
     right: 39%;
-    bottom: 0;
+    bottom: 77px;
     position: absolute;
   }
 
@@ -481,6 +481,7 @@ p {
     width: 75px;
     height: 103px;
     right: 13%;
+    bottom: 120px;
     position: absolute;
   }
 
