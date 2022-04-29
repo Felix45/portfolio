@@ -90,7 +90,8 @@ p {
 
 .menu ul,
 .intro-section-bg,
-.intro-section-footer-bg {
+.intro-section-footer-bg,
+.hide-on-mobile {
   display: none;
 }
 
@@ -384,6 +385,10 @@ p {
     display: flex;
   }
 
+  .hide-on-mobile {
+    display: list-item;
+  }
+
   .intro {
     width: calc(100% - 68px);
     margin: 0 auto;
@@ -456,16 +461,16 @@ p {
   .intro .intro-section-footer-bg .bg-footer-item-2 {
     background: url('../images/headerbg.svg') no-repeat -205px -650px;
     width: 53px;
-	  height: 56px;
+    height: 56px;
     left: 16%;
     bottom: 80px;
     position: absolute;
   }
 
   .intro .intro-section-footer-bg .bg-footer-item-3 {
-    background: url('../images/headerbg.svg') no-repeat -685px -630px;;
+    background: url('../images/headerbg.svg') no-repeat -685px -630px;
     width: 167px;
-	  height: 92px;
+    height: 92px;
     right: 39%;
     bottom: 0;
     position: absolute;
@@ -485,7 +490,7 @@ p {
 
   .project-cards {
     margin: 0 0 114px 0;
-    background-color: #e5e5e5;;
+    background-color: #e5e5e5;
   }
 
   .project-cards .grid-item {
@@ -499,7 +504,13 @@ p {
     margin-bottom: 114px;
   }
 
-  .project-cards .grid-item.card div{
+  .contact-me .form-footer-bg div {
+    left: 75px;
+    bottom: 52%;
+    position: absolute;
+  }
+
+  .project-cards .grid-item.card div {
     width: 50%;
   }
 
@@ -530,7 +541,7 @@ p {
     grid-template-columns: 42% 68%;
   }
 
-  .about-me .menu li ul{
+  .about-me .menu li ul {
     flex-direction: row;
   }
 
@@ -558,12 +569,6 @@ p {
     justify-content: center;
   }
 
-  .contact-me .form-footer-bg div {
-    left: 75px;
-    bottom: 52%;
-    position: absolute;
-  }
-
   .contact-me form {
     width: 32%;
     display: flex;
@@ -577,13 +582,13 @@ p {
     right: 65%;
   }
 
-  .contact-me .form-header-bg .left-background-sprite{
+  .contact-me .form-header-bg .left-background-sprite {
     width: 147px;
-	  height: 163px;
+    height: 163px;
     right: 74px;
     top: 40px;
     position: absolute;
-    background: url('../images/contact-form-background-shapes.svg') no-repeat -1136px 0;;
+    background: url('../images/contact-form-background-shapes.svg') no-repeat -1136px 0;
   }
 
   .contact-me form .circle-bg-item {
@@ -597,8 +602,8 @@ p {
 
   .contact-me form .poly-bg-item {
     background: url('../images/contact-form-background-shapes.svg') no-repeat -262px -662px;
-	  width: 67px;
-	  height: 51px;
+    width: 67px;
+    height: 51px;
     position: absolute;
     bottom: 73px;
     left: 23%;
