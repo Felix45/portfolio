@@ -621,7 +621,8 @@ p {
     left: 23%;
   }
 
-  .contact-me input, .contact-me textarea {
+  .contact-me input,
+  .contact-me textarea {
     border-radius: 0;
   }
 }
