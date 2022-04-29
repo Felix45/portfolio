@@ -19,7 +19,19 @@ a {
 .flex-container {
   display: flex;
   padding: 14px 24px;
+  /*flex-direction: column;*/
   background-color: #fff;
+  justify-content: space-between;
+}
+
+.menu-wrapper {
+  display: flex;
+}
+
+.menu-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -369,11 +381,11 @@ p {
 
 @media screen and (min-width: 767px) {
   body {
-    background-color: #fff;
+    background-color: #e5e5e5;
   }
 
-  header {
-    width: 75%;
+  .menu-wrapper {
+    width: 80%;
     margin: auto;
   }
 
@@ -390,11 +402,11 @@ p {
   }
 
   .intro {
-    width: calc(100% - 68px);
-    margin: 0 auto;
     position: relative;
+    padding: 0 32px;
     justify-content: center;
     background-image: none;
+    border-bottom-left-radius: 100px
   }
 
   .intro .intro-section-bg,
@@ -501,10 +513,6 @@ p {
     margin: 114px auto 0 auto;
   }
 
-  .project-cards .grid-item.flex-item-last {
-    margin-bottom: 114px;
-  }
-
   .contact-me .form-footer-bg div {
     left: 75px;
     bottom: 52%;
@@ -537,8 +545,8 @@ p {
   }
 
   .grid-container.about-me {
-    width: 80%;
-    margin: 114px auto 0 auto;
+    margin: 0 0 30px 0;
+    padding: 114px;
     grid-template-columns: 42% 68%;
   }
 
