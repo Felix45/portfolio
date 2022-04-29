@@ -19,13 +19,9 @@ a {
 .flex-container {
   display: flex;
   padding: 14px 24px;
-  /*flex-direction: column;*/
+  flex-direction: column;
   background-color: #fff;
   justify-content: space-between;
-}
-
-.menu-wrapper {
-  display: flex;
 }
 
 .menu-wrapper {
@@ -406,7 +402,7 @@ p {
     padding: 0 32px;
     justify-content: center;
     background-image: none;
-    border-bottom-left-radius: 100px
+    border-bottom-left-radius: 100px;
   }
 
   .intro .intro-section-bg,
