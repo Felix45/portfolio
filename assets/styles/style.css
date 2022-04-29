@@ -503,6 +503,11 @@ p {
     width: 50%;
   }
 
+  .project-cards .grid-item.card .project-role-wrapper,
+  .project-cards .grid-item.card .tags-wrapper {
+    width: 100%;
+  }
+
   .flex-item-1 {
     order: 1;
   }
