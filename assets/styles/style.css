@@ -24,6 +24,15 @@ a {
   justify-content: space-between;
 }
 
+.logo {
+  animation: logo 2s ease-in;
+}
+
+@keyframes logo {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .menu-wrapper {
   width: 100%;
   display: flex;
@@ -139,10 +148,6 @@ p {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
-}
-
-.grid-item .project-role-wrapper span {
-  font-weight: bold;
 }
 
 .grid-item .project-role li::before {
@@ -288,7 +293,7 @@ p {
 
 .btn {
   display: flex;
-  width: max-content;
+  width: 200px;
   align-items: center;
   justify-content: center;
   color: #7f8cff;
@@ -299,6 +304,7 @@ p {
   margin: 40px 0 20px;
   background-color: #fff;
   border: 1px solid #7f8cff;
+  transition: all 0.5s;
 }
 
 .btn-up {
@@ -306,10 +312,39 @@ p {
   font-weight: 700;
 }
 
+.btn span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.grid-item .project-role-wrapper span {
+  font-weight: bold;
+}
+
+.btn span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -11px;
+  font-size: xx-large;
+  right: -20px;
+  transition: 0.5s;
+}
+
 .btn:hover {
   color: #fff;
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span::after {
+  opacity: 1;
+  right: 0;
 }
 
 .btn:focus {
@@ -376,6 +411,12 @@ p {
 
 .about-me .menu li ul li a img {
   margin-right: 16px;
+}
+
+.grid-item .card-image img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: -5px -5px 5px #e5e5e5, 5px 5px 5px #e5e5e5;
 }
 
 @media screen and (min-width: 767px) {
