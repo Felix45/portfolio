@@ -24,6 +24,15 @@ a {
   justify-content: space-between;
 }
 
+.logo {
+  animation: logo 2s ease-in;
+}
+
+@keyframes logo {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .menu-wrapper {
   width: 100%;
   display: flex;
@@ -141,10 +150,6 @@ p {
   background-color: #fff;
 }
 
-.grid-item .project-role-wrapper span {
-  font-weight: bold;
-}
-
 .grid-item .project-role li::before {
   content: " ";
   width: 12px;
@@ -158,12 +163,6 @@ p {
 
 .grid-item .card-image img {
   width: 100%;
-}
-
-.grid-item .card-image img:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-  box-shadow: -5px -5px 5px #e5e5e5, 5px 5px 5px #e5e5e5;
 }
 
 .grid-item .card-description h2 {
@@ -319,6 +318,10 @@ p {
   transition: 0.5s;
 }
 
+.grid-item .project-role-wrapper span {
+  font-weight: bold;
+}
+
 .btn span::after {
   content: '\00bb';
   position: absolute;
@@ -339,7 +342,7 @@ p {
   padding-right: 25px;
 }
 
-.btn:hover span:after {
+.btn:hover span::after {
   opacity: 1;
   right: 0;
 }
@@ -408,6 +411,12 @@ p {
 
 .about-me .menu li ul li a img {
   margin-right: 16px;
+}
+
+.grid-item .card-image img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: -5px -5px 5px #e5e5e5, 5px 5px 5px #e5e5e5;
 }
 
 @media screen and (min-width: 767px) {
