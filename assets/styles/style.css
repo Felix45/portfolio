@@ -317,7 +317,8 @@ p {
   content: '\00bb';
   position: absolute;
   opacity: 0;
-  top: 0;
+  top: -11px;
+  font-size: xx-large;
   right: -20px;
   transition: 0.5s;
 }
