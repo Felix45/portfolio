@@ -160,6 +160,12 @@ p {
   width: 100%;
 }
 
+.grid-item .card-image img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: -5px -5px 5px #e5e5e5, 5px 5px 5px #e5e5e5;
+}
+
 .grid-item .card-description h2 {
   margin: 12px 0;
   font-size: 32px;
