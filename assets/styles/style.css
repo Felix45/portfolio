@@ -288,7 +288,7 @@ p {
 
 .btn {
   display: flex;
-  width: max-content;
+  width: 200px;
   align-items: center;
   justify-content: center;
   color: #7f8cff;
@@ -299,6 +299,7 @@ p {
   margin: 40px 0 20px;
   background-color: #fff;
   border: 1px solid #7f8cff;
+  transition: all 0.5s;
 }
 
 .btn-up {
@@ -306,10 +307,34 @@ p {
   font-weight: 700;
 }
 
+.btn span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
 .btn:hover {
   color: #fff;
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .btn:focus {
