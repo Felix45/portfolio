@@ -4,6 +4,8 @@
 
 > This is my professional portfolio outlining previous projects
 
+![portfolio project screenshot](assets/images/screenshot.png)
+
 
 ## Built With
 
@@ -53,13 +55,19 @@ Start the http application server
 
 
 
-## Author
+## Authors
 
 👤 **Felix Ouma**
 
 - GitHub: [@Felix45](https://github.com/Felix45)
 - Twitter: [@Felix_Atonoh](https://twitter.com/Felix_Atonoh)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/felix-ouma-639766b0/)
+
+👤 **Tasnimul Hassan**
+
+- GitHub: [@tasnimulhasan07](https://github.com/tasnimulhasan07)
+- Twitter: [@tasnimulhasan07](https://twitter.com/tasnimulhasan07)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tasnimulhasan07)
 
 
 ## 🤝 Contributing
