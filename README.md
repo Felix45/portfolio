@@ -4,6 +4,8 @@
 
 > This is my professional portfolio outlining previous projects
 
+![portfolio project screenshot](assets/images/screenshot.png)
+
 
 ## Built With
 
