@@ -259,6 +259,11 @@ p {
   background: #0d151e;
 }
 
+.contact-me .status-bar-fixed {
+  z-index: 1;
+  position: fixed;
+}
+
 .contact-me .form-header-bg {
   width: 100%;
   display: flex;
@@ -451,6 +456,7 @@ p {
 
 .menu-wrapper .menu .mobile-menu li a {
   color: #fff;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 767px) {
