@@ -1,35 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "\"This is my professional portfolio outlining previous projects\"",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Felix45/portfolio.git"
-  },
-  "author": "\"Felix Ouma\"",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Felix45/portfolio/issues"
-  },
-  "homepage": "https://github.com/Felix45/portfolio#readme",
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.26.0",
-    "hint": "^6.2.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
-  },
   "dependencies": {
     "abab": "^2.0.6",
-    "abbrev": "^1.1.1",
     "acorn": "^8.7.0",
     "acorn-globals": "^6.0.0",
     "acorn-jsx": "^5.3.2",
@@ -44,8 +19,6 @@
     "ansi-regex": "^5.0.1",
     "ansi-styles": "^4.3.0",
     "anymatch": "^3.1.2",
-    "aproba": "^2.0.0",
-    "are-we-there-yet": "^2.0.0",
     "array-union": "^2.1.0",
     "arrify": "^1.0.1",
     "asn1": "^0.2.6",
@@ -82,7 +55,6 @@
     "camelcase": "^6.3.0",
     "camelcase-keys": "^6.2.2",
     "caniuse-lite": "^1.0.30001332",
-    "canvas": "^2.9.1",
     "caseless": "^0.12.0",
     "chalk": "^4.1.2",
     "character-entities": "^1.2.4",
@@ -103,12 +75,10 @@
     "color-convert": "^2.0.1",
     "color-name": "^1.1.4",
     "color-string": "^1.9.0",
-    "color-support": "^1.1.3",
     "combined-stream": "^1.0.8",
     "compress-brotli": "^1.3.6",
     "concat-map": "^0.0.1",
     "configstore": "^5.0.1",
-    "console-control-strings": "^1.1.0",
     "content-type": "^1.0.4",
     "convert-source-map": "^1.8.0",
     "core-js": "^3.6.5",
@@ -137,9 +107,7 @@
     "defer-to-connect": "^2.0.1",
     "degenerator": "^3.0.2",
     "delayed-stream": "^1.0.0",
-    "delegates": "^1.0.0",
     "depd": "^1.1.2",
-    "detect-libc": "^2.0.1",
     "devtools-protocol": "^0.0.981744",
     "dir-glob": "^3.0.1",
     "dom-serializer": "^1.4.1",
@@ -196,7 +164,6 @@
     "fs.realpath": "^1.0.0",
     "ftp": "^0.3.10",
     "function-bind": "^1.1.1",
-    "gauge": "^3.0.2",
     "gensync": "^1.0.0-beta.2",
     "get-stdin": "^8.0.0",
     "get-stream": "^5.2.0",
@@ -218,7 +185,6 @@
     "hard-rejection": "^2.1.0",
     "has": "^1.0.3",
     "has-flag": "^4.0.0",
-    "has-unicode": "^2.0.1",
     "has-yarn": "^2.1.0",
     "hosted-git-info": "^5.0.0",
     "html-encoding-sniffer": "^3.0.0",
@@ -345,13 +311,11 @@
     "mkdirp-classic": "^0.5.3",
     "ms": "^2.1.2",
     "mutationobserver-shim": "^0.3.7",
-    "nan": "^2.15.0",
     "nanoid": "^3.3.3",
     "negotiator": "^0.6.3",
     "netmask": "^2.0.2",
     "node-fetch": "^2.6.7",
     "node-releases": "^2.0.3",
-    "nopt": "^5.0.0",
     "normalize-package-data": "^3.0.3",
     "normalize-path": "^3.0.0",
     "normalize-range": "^0.1.2",
@@ -360,12 +324,10 @@
     "npm-package-arg": "^9.0.2",
     "npm-registry-fetch": "^13.1.1",
     "npm-run-path": "^4.0.1",
-    "npmlog": "^5.0.1",
     "nth-check": "^2.0.1",
     "num2fraction": "^1.2.2",
     "nwsapi": "^2.2.0",
     "oauth-sign": "^0.9.0",
-    "object-assign": "^4.1.1",
     "once": "^1.4.0",
     "onetime": "^5.1.2",
     "optionator": "^0.9.1",
@@ -456,14 +418,11 @@
     "saxes": "^5.0.1",
     "semver": "^7.3.7",
     "semver-diff": "^3.1.1",
-    "set-blocking": "^2.0.0",
     "setimmediate": "^1.0.5",
     "setprototypeof": "^1.2.0",
     "shebang-command": "^2.0.0",
     "shebang-regex": "^3.0.0",
     "signal-exit": "^3.0.7",
-    "simple-concat": "^1.0.1",
-    "simple-get": "^3.1.1",
     "simple-swizzle": "^0.2.2",
     "slash": "^3.0.0",
     "slice-ansi": "^4.0.0",
@@ -548,7 +507,6 @@
     "whatwg-mimetype": "^3.0.0",
     "whatwg-url": "^10.0.0",
     "which": "^2.0.2",
-    "wide-align": "^1.1.5",
     "widest-line": "^3.1.0",
     "word-wrap": "^1.2.3",
     "wrap-ansi": "^7.0.0",
@@ -564,5 +522,29 @@
     "yargs-parser": "^20.2.9",
     "yauzl": "^2.10.0",
     "zwitch": "^1.0.5"
-  }
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^6.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felix45/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felix45/portfolio/issues"
+  },
+  "homepage": "https://github.com/Felix45/portfolio#readme"
 }
