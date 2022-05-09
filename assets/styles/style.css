@@ -177,12 +177,12 @@ p {
 
 .grid-item .tags a {
   color: #3b4eff;
-  font-weight: 500;
+  font: 500 12px;
   padding: 4px 12px 4px 12px;
   background: #ebebff;
   border-radius: 8px;
   text-decoration: none;
-  margin: 8px 20px 40px 0;
+  margin: 8px 5px 40px 0;
 }
 
 .grid-item .card-description p {
