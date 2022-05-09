@@ -442,8 +442,8 @@ p {
   line-height: 44px;
   font-weight: 600;
   flex-direction: column;
-  background-color: rgba(50, 70, 255, 0.85);
-  backdrop-filter: blur(5px);
+  background-color: rgba(50, 70, 255, 0.80);
+  backdrop-filter: blur(5.5px);
 }
 
 .menu-wrapper .menu .mobile-menu li {
