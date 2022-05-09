@@ -442,7 +442,7 @@ p {
   line-height: 44px;
   font-weight: 600;
   flex-direction: column;
-  background-color: rgba(50, 70, 255, 0.80);
+  background-color: rgba(50, 70, 255, 0.8);
   backdrop-filter: blur(5.5px);
 }
 
