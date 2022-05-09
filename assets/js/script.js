@@ -1,8 +1,11 @@
 const hambugerMenu = document.querySelector('.menu-icon');
 const mobileMenu = document.querySelector('.menu-wrapper .menu ul');
 
-const showMenu = () => {
-  mobileMenu.classList.add('mobile-menu');
+const toggleMenu = () => {
+  mobileMenu.classList.toggle('mobile-menu');
 };
 
-hambugerMenu.addEventListener('click', showMenu);
+hambugerMenu.addEventListener('click', toggleMenu);
+
+const closeMenu = document.querySelector('.close-icon');
+closeMenu.addEventListener('click', toggleMenu);
