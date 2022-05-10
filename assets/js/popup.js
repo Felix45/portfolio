@@ -20,7 +20,7 @@ const projects = [
     livelink: 'felix45.github.io/portfolio',
     seesource: 'github.com/felix45/portfolio',
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
+    htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
   },
 
   {
@@ -32,7 +32,7 @@ const projects = [
     livelink: 'felix45.github.io/portfolio',
     seesource: 'github.com/felix45/portfolio',
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card', 'flex-item-2'], cardImage: ['card-image'], cardDescription: ['card-description'] },
+    htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description'] },
   },
 
   {
@@ -44,7 +44,7 @@ const projects = [
     livelink: 'felix45.github.io/portfolio',
     seesource: 'github.com/felix45/portfolio',
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
+    htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
   },
 ];
 
@@ -57,24 +57,7 @@ const listItems = (items) => {
   return list;
 };
 
-const createProjectCard = (project, position = null) => {
-  articleHolder = document.createElement('article');
-  articleHolder.className = project.htmlClass.article.join(' ');
-
-  const cardImage = document.createElement('div');
-  cardImage.className = project.htmlClass.cardImage.join(' ');
-  const Image = document.createElement('img');
-  Image.src = project.image;
-  cardImage.appendChild(Image);
-  articleHolder.appendChild(cardImage);
-
-  // New Column
-  const cardDescription = document.createElement('div');
-  cardDescription.className = project.htmlClass.cardDescription.join(' ');
-
-  const cardHeader = document.createElement('h2');
-  cardHeader.textContent = project.title;
-
+const createRoles = (project) => {
   const cardRoleWrapper = document.createElement('div');
   cardRoleWrapper.className = 'project-role-wrapper';
 
@@ -89,6 +72,48 @@ const createProjectCard = (project, position = null) => {
 
   cardRoleWrapper.appendChild(cardRolePosition);
 
+  return cardRoleWrapper;
+}
+
+const createHeader = (project, titleElement) => {
+  const cardHeader = document.createElement(titleElement);
+  cardHeader.textContent = project.title;
+
+  return cardHeader;
+}
+
+const createProjectCard = (project, position = null, isDesktop = true) => {
+  articleHolder = document.createElement('article');
+  articleHolder.className = project.htmlClass.article.join(' ');
+  const cardHeader = createHeader(project,'h2');
+  const cardRoleWrapper = createRoles(project);
+
+  if(!isDesktop) {
+    articleHolder.appendChild(cardHeader);
+    articleHolder.appendChild(cardRoleWrapper);
+  }
+
+  const cardImage = document.createElement('div');
+  cardImage.className = project.htmlClass.cardImage.join(' ');
+  const Image = document.createElement('img');
+
+  if(isDesktop || document.documentElement.clientWidth <= 767) {
+    Image.src = project.image;
+    cardImage.appendChild(Image);
+  }else {
+    cardImage.style.height = `70vh`;
+    cardImage.style.backgroundImage = `url(${project.image})`;
+    cardImage.style.backgroundRepeat = `no-repeat`;
+    cardImage.style.backgroundSize = `100%`;
+    cardImage.style.backgroundPositionY = `-190px`;
+    cardImage.style.backgroundPositionx = `center`;
+  }
+  articleHolder.appendChild(cardImage);
+
+  // New Column
+  const cardDescription = document.createElement('div');
+  cardDescription.className = project.htmlClass.cardDescription.join(' ');
+
   const cardTagWrapper = document.createElement('div');
   cardTagWrapper.className = 'tags-wrapper';
 
@@ -100,19 +125,24 @@ const createProjectCard = (project, position = null) => {
 
   const cardButton = document.createElement('a');
   cardButton.className = 'btn btn-project';
+
   if (position){
     cardButton.setAttribute('data-position', position - 1);
   }
+
   cardButton.innerHTML = '<span>See Project</span>';
 
   const cardText = document.createElement('p');
   cardText.textContent = project.description;
 
-  cardDescription.appendChild(cardHeader);
-  cardDescription.appendChild(cardRoleWrapper);
+  if(isDesktop) {
+    cardDescription.appendChild(cardHeader);
+    cardDescription.appendChild(cardRoleWrapper);
+  }
   cardDescription.appendChild(cardText);
+  cardTagWrapper.appendChild(cardButton);
   cardDescription.appendChild(cardTagWrapper);
-  cardDescription.appendChild(cardButton);
+  
 
   articleHolder.appendChild(cardDescription);
   return articleHolder;
@@ -123,7 +153,7 @@ const cardContainer = document.querySelector('#port');
 //let articleHolder = null;
 
 for (let i = 0; i < projects.length; i += 1) {
-  const cardInstance = createProjectCard(projects[i], i + 1);
+  const cardInstance = createProjectCard(projects[i], i + 1, true);
   articleContainer.appendChild(cardInstance);
 }
 
@@ -134,7 +164,7 @@ cardContainer.appendChild(articleContainer);
 function showPopupWindow() {
  console.log(this);
  const position  = parseInt(this.getAttribute('data-position'));
- const modalContent = createProjectCard(projects[position]);
+ const modalContent = createProjectCard(projects[position], false, false);
  console.log(modalContent);
  const overlay = document.querySelector('.overlay');
  overlay.innerHTML = '';

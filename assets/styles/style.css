@@ -195,6 +195,10 @@ p {
   margin: 8px 5px 40px 0;
 }
 
+.hide-ruby.grid-item .tags li:nth-child(2) {
+  display: none;
+}
+
 .grid-item .card-description p {
   margin: 20px 0;
 }
@@ -429,8 +433,6 @@ p {
 
 .grid-item .card-image img:hover {
   cursor: pointer;
-  transform: scale(1.2);
-  box-shadow: -5px -5px 5px #e5e5e5, 5px 5px 5px #e5e5e5;
 }
 
 .menu-wrapper .menu .mobile-menu {
@@ -465,7 +467,7 @@ p {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   display: none; 
   height: 100vh;
   left: 0;
@@ -473,9 +475,31 @@ p {
   bottom: 0;
   top: 0;
   z-index: 3;
+  justify-content: center;
   background-color: rgba(193, 199, 208, 0.8);
   backdrop-filter: blur(5px);
   padding: 10px 20px;
+}
+
+.overlay .grid-item {
+  margin: 20px 0 0;
+}
+
+.grid-item .tags li {
+  margin: 8px 5px 20px 0;
+}
+
+.overlay .grid-item .btn {
+  margin-top: 20px;
+}
+
+.overlay .tags-wrapper ul {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.overlay .card {
+  width: 90%;
 }
 
 @media screen and (min-width: 767px) {
@@ -492,7 +516,8 @@ p {
     display: none;
   }
 
-  .menu ul {
+  .menu ul,
+  .hide-ruby.grid-item .tags li:nth-child(2) {
     display: flex;
   }
 
@@ -509,9 +534,14 @@ p {
   }
 
   .intro .intro-section-bg,
-  .intro .intro-section-footer-bg {
+  .intro .intro-section-footer-bg,
+  .overlay .card-description {
     display: flex;
     flex-direction: row;
+  }
+
+  .overlay .card-description {
+    justify-content: space-between;
   }
 
   .intro .intro-section-bg div {
