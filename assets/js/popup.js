@@ -5,6 +5,7 @@ const projects = [
     image: '/assets/images/snapshootportfolio.svg',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
+    skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], 
     livelink: 'felix45.github.io/portfolio',
     seesource: 'github.com/felix45/portfolio',
     seeproject: 'See Project',
@@ -17,6 +18,7 @@ const projects = [
     image: '/assets/images/project-4.svg',
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
+    skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], 
     livelink: 'felix45.github.io/portfolio',
     seesource: 'github.com/felix45/portfolio',
     seeproject: 'See Project',
@@ -29,6 +31,7 @@ const projects = [
     image: '/assets/images/tonic.svg',
     description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
+    skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], 
     livelink: 'felix45.github.io/portfolio',
     seesource: 'github.com/felix45/portfolio',
     seeproject: 'See Project',
@@ -41,12 +44,15 @@ const projects = [
     image: '/assets/images/multi-stories-post.svg',
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car..',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
+    skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], 
     livelink: 'felix45.github.io/portfolio',
     seesource: 'github.com/felix45/portfolio',
     seeproject: 'See Project',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
   },
 ];
+
+const dummyText = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`;
 
 const listItems = (items) => {
   let list = '';
@@ -119,7 +125,6 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
 
   const cardTagList = document.createElement('ul');
   cardTagList.className = 'tags';
-  cardTagList.innerHTML = listItems(project.skills);
 
   cardTagWrapper.appendChild(cardTagList);
 
@@ -138,6 +143,11 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
   if(isDesktop) {
     cardDescription.appendChild(cardHeader);
     cardDescription.appendChild(cardRoleWrapper);
+    cardText.textContent = project.description;
+    cardTagList.innerHTML = listItems(project.skills);
+  } else {
+    cardText.textContent = dummyText;
+    cardTagList.innerHTML = listItems(project.skillsModal);
   }
   cardDescription.appendChild(cardText);
   cardTagWrapper.appendChild(cardButton);
