@@ -57,39 +57,35 @@ const listItems = (items) => {
   return list;
 };
 
-const articleContainer = document.createElement('div');
-const cardContainer = document.querySelector('#port');
-let articleHolder = null;
-
-for (let i = 0; i < projects.length; i += 1) {
+const createProjectCard = (project, position = null) => {
   articleHolder = document.createElement('article');
-  articleHolder.className = projects[i].htmlClass.article.join(' ');
+  articleHolder.className = project.htmlClass.article.join(' ');
 
   const cardImage = document.createElement('div');
-  cardImage.className = projects[i].htmlClass.cardImage.join(' ');
+  cardImage.className = project.htmlClass.cardImage.join(' ');
   const Image = document.createElement('img');
-  Image.src = projects[i].image;
+  Image.src = project.image;
   cardImage.appendChild(Image);
   articleHolder.appendChild(cardImage);
 
   // New Column
   const cardDescription = document.createElement('div');
-  cardDescription.className = projects[i].htmlClass.cardDescription.join(' ');
+  cardDescription.className = project.htmlClass.cardDescription.join(' ');
 
   const cardHeader = document.createElement('h2');
-  cardHeader.textContent = projects[i].title;
+  cardHeader.textContent = project.title;
 
   const cardRoleWrapper = document.createElement('div');
   cardRoleWrapper.className = 'project-role-wrapper';
 
   const cardRoleCompany = document.createElement('span');
-  cardRoleCompany.textContent = projects[i].roles.company;
+  cardRoleCompany.textContent = project.roles.company;
 
   cardRoleWrapper.appendChild(cardRoleCompany);
 
   const cardRolePosition = document.createElement('ul');
   cardRolePosition.className = 'project-role';
-  cardRolePosition.innerHTML = listItems(projects[i].roles.position);
+  cardRolePosition.innerHTML = listItems(project.roles.position);
 
   cardRoleWrapper.appendChild(cardRolePosition);
 
@@ -98,16 +94,19 @@ for (let i = 0; i < projects.length; i += 1) {
 
   const cardTagList = document.createElement('ul');
   cardTagList.className = 'tags';
-  cardTagList.innerHTML = listItems(projects[i].skills);
+  cardTagList.innerHTML = listItems(project.skills);
 
   cardTagWrapper.appendChild(cardTagList);
 
   const cardButton = document.createElement('a');
-  cardButton.className = 'btn';
+  cardButton.className = 'btn btn-project';
+  if (position){
+    cardButton.setAttribute('data-position', position - 1);
+  }
   cardButton.innerHTML = '<span>See Project</span>';
 
   const cardText = document.createElement('p');
-  cardText.textContent = projects[i].description;
+  cardText.textContent = project.description;
 
   cardDescription.appendChild(cardHeader);
   cardDescription.appendChild(cardRoleWrapper);
@@ -116,7 +115,42 @@ for (let i = 0; i < projects.length; i += 1) {
   cardDescription.appendChild(cardButton);
 
   articleHolder.appendChild(cardDescription);
-  articleContainer.appendChild(articleHolder);
+  return articleHolder;
+};
+
+const articleContainer = document.createElement('div');
+const cardContainer = document.querySelector('#port');
+//let articleHolder = null;
+
+for (let i = 0; i < projects.length; i += 1) {
+  const cardInstance = createProjectCard(projects[i], i + 1);
+  articleContainer.appendChild(cardInstance);
 }
 
 cardContainer.appendChild(articleContainer);
+
+//Popup window
+
+function showPopupWindow() {
+ console.log(this);
+ const position  = parseInt(this.getAttribute('data-position'));
+ const modalContent = createProjectCard(projects[position]);
+ console.log(modalContent);
+ const overlay = document.querySelector('.overlay');
+ overlay.innerHTML = '';
+ overlay.appendChild(modalContent);
+ overlay.style.display = 'flex';
+}
+
+const btnProjects = document.querySelectorAll('.btn-project');
+btnProjects.forEach((btnProject) => {
+  btnProject.addEventListener('click', showPopupWindow);
+});
+
+
+
+
+
+
+
+
