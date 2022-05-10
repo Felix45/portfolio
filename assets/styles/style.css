@@ -185,7 +185,7 @@ p {
   margin-top: 16px;
 }
 
-.grid-item .tags a {
+.grid-item .tags li {
   color: #3b4eff;
   font: 500 12px;
   padding: 4px 12px 4px 12px;
@@ -315,7 +315,7 @@ p {
   font-size: 17px;
   font-weight: 500;
   border-radius: 8px;
-  margin: 40px 0 20px;
+  margin: 0 0 20px;
   background-color: #fff;
   border: 1px solid #3268f1;
   transition: all 0.5s;
