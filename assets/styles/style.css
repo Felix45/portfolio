@@ -24,8 +24,18 @@ a {
   justify-content: space-between;
 }
 
+.flex-row {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
 .logo {
   animation: logo 2s ease-in;
+}
+
+.fixed {
+  overflow: hidden;
 }
 
 @keyframes logo {
@@ -253,6 +263,11 @@ p {
   background: #0d151e;
 }
 
+.contact-me .status-bar-fixed {
+  z-index: 1;
+  position: fixed;
+}
+
 .contact-me .form-header-bg {
   width: 100%;
   display: flex;
@@ -416,6 +431,37 @@ p {
   cursor: pointer;
   transform: scale(1.2);
   box-shadow: -5px -5px 5px #e5e5e5, 5px 5px 5px #e5e5e5;
+}
+
+.menu-wrapper .menu .mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  flex-direction: column;
+  background-color: rgba(50, 70, 255, 0.8);
+  backdrop-filter: blur(5.5px);
+}
+
+.menu-wrapper .menu .mobile-menu li {
+  margin: 20px 0 0 28px;
+}
+
+.menu-wrapper .menu .mobile-menu li:first-child {
+  margin: 49px 38px 0;
+}
+
+.menu-wrapper .menu .mobile-menu li a {
+  color: #fff;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 767px) {

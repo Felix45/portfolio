@@ -17,13 +17,18 @@
             </div>
 
             <nav class="menu">
-                <div class="menu-icon">
+                <div class="menu-icon toggle-menu">
                     <img src="assets/images/Union.svg" alt="Hambuger Mobile Menu" />
                 </div>
-                <ul>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="">
+                    <li class="flex-row">
+                        <span class="close-icon toggle-menu">
+                            <img src="assets/images/close.svg" alt="Close menu icon" />
+                        </span>
+                    </li>
+                    <li><a class="toggle-menu" href="#portfolio">Portfolio</a></li>
+                    <li><a class="toggle-menu" href="#about">About</a></li>
+                    <li><a class="toggle-menu" href="#contact">Contact</a></li>
                 </ul>
             </nav>
           </div>
@@ -82,7 +87,7 @@
             </div>
         </section>
 
-        <div class="grid-container project-cards">
+        <div class="grid-container project-cards" id="portfolio">
             <article class="grid-item card flex-item-2">
                 <div class="card-image">
                     <img src="assets/images/tonic.svg" alt="Facebook 360 project screenshot" />
@@ -200,7 +205,7 @@
             </article>
         </div>
 
-        <section class="grid-container about-me">
+        <section class="grid-container about-me" id="about">
             <div class="grid-item">
                 <h2 class="title">About <br /> Myself</h2>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -253,7 +258,7 @@
             </div>
         </section>
 
-      <footer class="flex-container contact-me">
+      <footer class="flex-container contact-me" id="contact">
         <div class="form-header-bg">
             <div class="left-background-sprite"></div>
             <div class="center-background-sprite"></div>
@@ -296,5 +301,9 @@
         </div>
     </footer>
     </main>
+
+    <!-- JavaScript-->
+     <script src="assets/js/script.js"></script>
+    <!-- End JavaScript-->
 </body>
 </html>
