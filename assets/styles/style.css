@@ -503,6 +503,7 @@ p {
 .overlay .grid-item {
   margin: 10px 0;
   height: 90vh;
+  overflow-y: scroll;
 }
 
 .overlay .grid-item .btn,
