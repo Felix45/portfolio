@@ -196,7 +196,11 @@ p {
   background: #ebebff;
   border-radius: 8px;
   text-decoration: none;
-  margin: 8px 5px 40px 0;
+  margin: 8px 5px 20px 0;
+}
+
+.menu-wrapper .menu .mobile-menu li {
+  margin: 20px 0 0 28px;
 }
 
 .hide-ruby.grid-item .tags li:nth-child(2) {
@@ -402,6 +406,11 @@ p {
   line-height: 24px;
 }
 
+.overlay .tags-wrapper ul {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .about-me .menu li ul {
   display: flex;
   margin: 36px 0;
@@ -431,6 +440,15 @@ p {
   background: url("../images/carret.svg") no-repeat calc(100% - 64px) 0;
 }
 
+.overlay .btn {
+  width: 140px;
+  font-size: 14px;
+}
+
+.overlay .btn img {
+  margin: 0 0 0 3px;
+}
+
 .about-me .menu li ul li a img {
   margin-right: 16px;
 }
@@ -457,10 +475,6 @@ p {
   backdrop-filter: blur(5.5px);
 }
 
-.menu-wrapper .menu .mobile-menu li {
-  margin: 20px 0 0 28px;
-}
-
 .menu-wrapper .menu .mobile-menu li:first-child {
   margin: 49px 38px 0;
 }
@@ -472,7 +486,7 @@ p {
 
 .overlay {
   position: fixed;
-  display: none; 
+  display: none;
   height: 100vh;
   left: 0;
   right: 0;
@@ -491,10 +505,6 @@ p {
   height: 90vh;
 }
 
-.grid-item .tags li {
-  margin: 8px 5px 20px 0;
-}
-
 .overlay .grid-item .btn,
 .overlay .card-image {
   margin-top: 20px;
@@ -504,25 +514,11 @@ p {
   line-height: 32px;
 }
 
-.overlay .tags-wrapper ul {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #e5e5e5;
-}
-
 .overlay .overlay-close {
   width: 20px;
   position: absolute;
   right: 40px;
   top: 7%;
-}
-
-.overlay .btn {
-  width: 140px;
-  font-size: 14px;
-}
-
-.overlay .btn img {
-  margin: 0 0 0 3px;
 }
 
 .overlay .d-flex {
@@ -564,18 +560,22 @@ p {
     right: 120px;
   }
 
-  .overlay .tags-wrapper ul {
-    flex-wrap: wrap;
-  }
-
-  .menu .menu-icon {
-    display: none;
+  .project-cards .grid-item .project-role li {
+    font-weight: normal;
   }
 
   .menu ul,
   .d-flex,
   .hide-ruby.grid-item .tags li:nth-child(2) {
     display: flex;
+  }
+
+  .overlay .tags-wrapper ul {
+    flex-wrap: wrap;
+  }
+
+  .menu .menu-icon {
+    display: none;
   }
 
   .hide-on-mobile {
@@ -714,10 +714,6 @@ p {
     width: 100%;
   }
 
-  .project-cards .grid-item .project-role li {
-    font-weight: normal;
-  }
-
   .flex-item-1 {
     order: 1;
   }
@@ -816,5 +812,4 @@ p {
   .overlay .grid-item .card-description p {
     margin: 0 36px 0 0;
   }
-
 }
