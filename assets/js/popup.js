@@ -6,8 +6,8 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
     skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], 
-    livelink: 'felix45.github.io/portfolio',
-    seesource: 'github.com/felix45/portfolio',
+    livelink: { link: 'felix45.github.io/portfolio', text: 'See live' },
+    seesource: { link: 'github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
     htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description'] },
   },
@@ -19,8 +19,8 @@ const projects = [
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
     skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], 
-    livelink: 'felix45.github.io/portfolio',
-    seesource: 'github.com/felix45/portfolio',
+    livelink: { link: 'felix45.github.io/portfolio', text: 'See live' },
+    seesource: { link: 'github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
     htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
   },
@@ -32,8 +32,8 @@ const projects = [
     description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
     skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], 
-    livelink: 'felix45.github.io/portfolio',
-    seesource: 'github.com/felix45/portfolio',
+    livelink: { link: 'felix45.github.io/portfolio', text: 'See live' },
+    seesource: { link: 'github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description'] },
   },
@@ -45,14 +45,15 @@ const projects = [
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car..',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
     skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'], 
-    livelink: 'felix45.github.io/portfolio',
-    seesource: 'github.com/felix45/portfolio',
+    livelink: { link: 'felix45.github.io/portfolio', text: 'See live' },
+    seesource: { link: 'github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
   },
 ];
 
 const dummyText = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`;
+const mobileText = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`;
 
 const listItems = (items) => {
   let list = '';
@@ -62,6 +63,29 @@ const listItems = (items) => {
 
   return list;
 };
+
+const modalFooter = (project) => {
+  const modalButtons = document.createElement('div');
+  modalButtons.className = 'd-flex';
+  const seeSourceButton = createImageButton(project, project.livelink, "/assets/images/Icon.svg");
+  modalButtons.appendChild(seeSourceButton);
+  const seeLiveButton = createImageButton(project, project.seesource, "/assets/images/sourcecode.svg");
+  modalButtons.appendChild(seeLiveButton);
+
+  return modalButtons;
+}
+
+const createImageButton = (project, dest, srcLink) => {
+  const link = document.createElement('a');
+  link.className = 'btn';
+  link.textContent = `${dest.text} `
+  link.href = dest.link;
+  const img = document.createElement('img');
+  img.src = srcLink;
+  link.appendChild(img);
+
+  return link;
+}
 
 const createRoles = (project) => {
   const cardRoleWrapper = document.createElement('div');
@@ -107,12 +131,15 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
     Image.src = project.image;
     cardImage.appendChild(Image);
   }else {
-    cardImage.style.height = `70vh`;
+    cardImage.style.height = `568px`;
     cardImage.style.backgroundImage = `url(${project.image})`;
     cardImage.style.backgroundRepeat = `no-repeat`;
-    cardImage.style.backgroundSize = `100%`;
-    cardImage.style.backgroundPositionY = `-190px`;
-    cardImage.style.backgroundPositionx = `center`;
+    cardImage.style.backgroundSize = `95%`;
+    cardImage.style.backgroundPositionY = `-250px`;
+    cardImage.style.backgroundPositionX = `18px`;
+
+
+    cardImage.classList.remove('flex-item-2');
   }
   articleHolder.appendChild(cardImage);
 
@@ -126,8 +153,6 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
   const cardTagList = document.createElement('ul');
   cardTagList.className = 'tags';
 
-  cardTagWrapper.appendChild(cardTagList);
-
   const cardButton = document.createElement('a');
   cardButton.className = 'btn btn-project';
 
@@ -135,22 +160,27 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
     cardButton.setAttribute('data-position', position - 1);
   }
 
-  cardButton.innerHTML = '<span>See Project</span>';
-
   const cardText = document.createElement('p');
   cardText.textContent = project.description;
+
+  cardTagList.innerHTML = listItems(project.skills);
 
   if(isDesktop) {
     cardDescription.appendChild(cardHeader);
     cardDescription.appendChild(cardRoleWrapper);
     cardText.textContent = project.description;
-    cardTagList.innerHTML = listItems(project.skills);
+  }else if(document.documentElement.clientWidth <= 767){
+    cardText.textContent = mobileText;
   } else {
     cardText.textContent = dummyText;
     cardTagList.innerHTML = listItems(project.skillsModal);
   }
+  cardTagWrapper.appendChild(cardTagList);
   cardDescription.appendChild(cardText);
-  cardTagWrapper.appendChild(cardButton);
+  if(isDesktop){
+    cardButton.innerHTML = '<span>See Project</span>';
+    cardTagWrapper.appendChild(cardButton);
+  }
   cardDescription.appendChild(cardTagWrapper);
   
 
@@ -172,25 +202,48 @@ cardContainer.appendChild(articleContainer);
 //Popup window
 
 function showPopupWindow() {
- console.log(this);
+
  const position  = parseInt(this.getAttribute('data-position'));
  const modalContent = createProjectCard(projects[position], false, false);
- console.log(modalContent);
+
  const overlay = document.querySelector('.overlay');
+ const overlayCloseBtn = overlayCloseButton();
+ const modalButtons = modalFooter(projects[position]);
+
+ console.log(modalButtons);
+ 
  overlay.innerHTML = '';
+
  overlay.appendChild(modalContent);
+ const tagsWrapper = document.querySelector('.overlay .tags-wrapper');
+ console.log(tagsWrapper);
+ tagsWrapper.appendChild(modalButtons);
+ overlay.childNodes[0].appendChild(overlayCloseBtn);
+ 
  overlay.style.display = 'flex';
+ document.querySelector('body').classList.toggle('fixed');
 }
 
+const closePopup = () => {
+  const overlay = document.querySelector('.overlay');
+  overlay.style.display = 'none';
+  overlay.innerHTML = '';
+  document.querySelector('body').classList.toggle('fixed');
+}
+
+const overlayCloseButton = () => {
+  const overlayCloseBtn = document.createElement('img');
+  overlayCloseBtn.className = 'overlay-close';
+  overlayCloseBtn.src = '/assets/images/overlay-close.svg';
+
+  overlayCloseBtn.addEventListener('click',closePopup);
+
+  return overlayCloseBtn;
+}
+
+
 const btnProjects = document.querySelectorAll('.btn-project');
+
 btnProjects.forEach((btnProject) => {
   btnProject.addEventListener('click', showPopupWindow);
 });
-
-
-
-
-
-
-
-

@@ -16,8 +16,13 @@ a {
   text-decoration: none;
 }
 
-.flex-container {
+.flex-container,
+.d-flex,
+.flex-row {
   display: flex;
+}
+
+.flex-container {
   padding: 14px 24px;
   flex-direction: column;
   background-color: #fff;
@@ -25,7 +30,6 @@ a {
 }
 
 .flex-row {
-  display: flex;
   justify-content: flex-end;
   flex-direction: row;
 }
@@ -175,7 +179,7 @@ p {
   width: 100%;
 }
 
-.grid-item .card-description h2 {
+.grid-item h2 {
   margin: 12px 0;
   font-size: 32px;
 }
@@ -476,21 +480,28 @@ p {
   top: 0;
   z-index: 3;
   justify-content: center;
-  background-color: rgba(193, 199, 208, 0.8);
+  align-items: center;
+  background-color: rgba(193, 199, 208, 0.75);
   backdrop-filter: blur(5px);
   padding: 10px 20px;
 }
 
 .overlay .grid-item {
-  margin: 20px 0 0;
+  margin: 10px 0;
+  height: 90vh;
 }
 
 .grid-item .tags li {
   margin: 8px 5px 20px 0;
 }
 
-.overlay .grid-item .btn {
+.overlay .grid-item .btn,
+.overlay .card-image {
   margin-top: 20px;
+}
+
+.overlay .grid-item .card-description p {
+  line-height: 32px;
 }
 
 .overlay .tags-wrapper ul {
@@ -498,8 +509,29 @@ p {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.overlay .card {
-  width: 90%;
+.overlay .overlay-close {
+  width: 20px;
+  position: absolute;
+  right: 40px;
+  top: 7%;
+}
+
+.overlay .btn {
+  width: 140px;
+  font-size: 14px;
+}
+
+.overlay .btn img {
+  margin: 0 0 0 3px;
+}
+
+.overlay .d-flex {
+  justify-content: space-around;
+}
+
+.overlay .grid-item h2 {
+  font-size: 25px;
+  margin: 6px 0 12px 0;
 }
 
 @media screen and (min-width: 767px) {
@@ -512,11 +544,36 @@ p {
     margin: auto;
   }
 
+  .overlay .card {
+    width: 90%;
+  }
+
+  .overlay .card-image {
+    margin: 36px 0;
+  }
+
+  .overlay .tags-wrapper {
+    min-width: 30%;
+  }
+
+  .overlay .grid-item {
+    margin: 10px 24px;
+  }
+
+  .overlay .overlay-close {
+    right: 120px;
+  }
+
+  .overlay .tags-wrapper ul {
+    flex-wrap: wrap;
+  }
+
   .menu .menu-icon {
     display: none;
   }
 
   .menu ul,
+  .d-flex,
   .hide-ruby.grid-item .tags li:nth-child(2) {
     display: flex;
   }
@@ -755,4 +812,9 @@ p {
   .contact-me textarea {
     border-radius: 0;
   }
+
+  .overlay .grid-item .card-description p {
+    margin: 0 36px 0 0;
+  }
+
 }
