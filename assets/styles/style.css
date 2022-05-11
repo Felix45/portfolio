@@ -16,8 +16,13 @@ a {
   text-decoration: none;
 }
 
-.flex-container {
+.flex-container,
+.d-flex,
+.flex-row {
   display: flex;
+}
+
+.flex-container {
   padding: 14px 24px;
   flex-direction: column;
   background-color: #fff;
@@ -25,7 +30,6 @@ a {
 }
 
 .flex-row {
-  display: flex;
   justify-content: flex-end;
   flex-direction: row;
 }
@@ -175,7 +179,7 @@ p {
   width: 100%;
 }
 
-.grid-item .card-description h2 {
+.grid-item h2 {
   margin: 12px 0;
   font-size: 32px;
 }
@@ -185,14 +189,22 @@ p {
   margin-top: 16px;
 }
 
-.grid-item .tags a {
+.grid-item .tags li {
   color: #3b4eff;
   font: 500 12px;
   padding: 4px 12px 4px 12px;
   background: #ebebff;
   border-radius: 8px;
   text-decoration: none;
-  margin: 8px 5px 40px 0;
+  margin: 8px 5px 20px 0;
+}
+
+.menu-wrapper .menu .mobile-menu li {
+  margin: 20px 0 0 28px;
+}
+
+.hide-ruby.grid-item .tags li:nth-child(2) {
+  display: none;
 }
 
 .grid-item .card-description p {
@@ -315,7 +327,7 @@ p {
   font-size: 17px;
   font-weight: 500;
   border-radius: 8px;
-  margin: 40px 0 20px;
+  margin: 0 0 20px;
   background-color: #fff;
   border: 1px solid #3268f1;
   transition: all 0.5s;
@@ -394,6 +406,11 @@ p {
   line-height: 24px;
 }
 
+.overlay .tags-wrapper ul {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .about-me .menu li ul {
   display: flex;
   margin: 36px 0;
@@ -423,14 +440,21 @@ p {
   background: url("../images/carret.svg") no-repeat calc(100% - 64px) 0;
 }
 
+.overlay .btn {
+  width: 140px;
+  font-size: 14px;
+}
+
+.overlay .btn img {
+  margin: 0 0 0 3px;
+}
+
 .about-me .menu li ul li a img {
   margin-right: 16px;
 }
 
 .grid-item .card-image img:hover {
   cursor: pointer;
-  transform: scale(1.2);
-  box-shadow: -5px -5px 5px #e5e5e5, 5px 5px 5px #e5e5e5;
 }
 
 .menu-wrapper .menu .mobile-menu {
@@ -451,10 +475,6 @@ p {
   backdrop-filter: blur(5.5px);
 }
 
-.menu-wrapper .menu .mobile-menu li {
-  margin: 20px 0 0 28px;
-}
-
 .menu-wrapper .menu .mobile-menu li:first-child {
   margin: 49px 38px 0;
 }
@@ -462,6 +482,53 @@ p {
 .menu-wrapper .menu .mobile-menu li a {
   color: #fff;
   font-weight: 600;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(193, 199, 208, 0.75);
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+}
+
+.overlay .grid-item {
+  margin: 10px 0;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.overlay .grid-item .btn,
+.overlay .card-image {
+  margin-top: 20px;
+}
+
+.overlay .grid-item .card-description p {
+  line-height: 32px;
+}
+
+.overlay .overlay-close {
+  width: 20px;
+  position: absolute;
+  right: 40px;
+  top: 7%;
+}
+
+.overlay .d-flex {
+  justify-content: space-around;
+}
+
+.overlay .grid-item h2 {
+  font-size: 25px;
+  margin: 6px 0 12px 0;
 }
 
 @media screen and (min-width: 767px) {
@@ -474,12 +541,42 @@ p {
     margin: auto;
   }
 
-  .menu .menu-icon {
-    display: none;
+  .overlay .card {
+    width: 90%;
   }
 
-  .menu ul {
+  .overlay .card-image {
+    margin: 36px 0;
+  }
+
+  .overlay .tags-wrapper {
+    min-width: 30%;
+  }
+
+  .overlay .grid-item {
+    margin: 10px 24px;
+  }
+
+  .overlay .overlay-close {
+    right: 120px;
+  }
+
+  .project-cards .grid-item .project-role li {
+    font-weight: normal;
+  }
+
+  .menu ul,
+  .d-flex,
+  .hide-ruby.grid-item .tags li:nth-child(2) {
     display: flex;
+  }
+
+  .overlay .tags-wrapper ul {
+    flex-wrap: wrap;
+  }
+
+  .menu .menu-icon {
+    display: none;
   }
 
   .hide-on-mobile {
@@ -495,9 +592,14 @@ p {
   }
 
   .intro .intro-section-bg,
-  .intro .intro-section-footer-bg {
+  .intro .intro-section-footer-bg,
+  .overlay .card-description {
     display: flex;
     flex-direction: row;
+  }
+
+  .overlay .card-description {
+    justify-content: space-between;
   }
 
   .intro .intro-section-bg div {
@@ -613,10 +715,6 @@ p {
     width: 100%;
   }
 
-  .project-cards .grid-item .project-role li {
-    font-weight: normal;
-  }
-
   .flex-item-1 {
     order: 1;
   }
@@ -710,5 +808,9 @@ p {
   .contact-me input,
   .contact-me textarea {
     border-radius: 0;
+  }
+
+  .overlay .grid-item .card-description p {
+    margin: 0 36px 0 0;
   }
 }
