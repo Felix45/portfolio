@@ -311,12 +311,6 @@ p {
   justify-content: space-between;
 }
 
-.contact-me .form-footer-bg div {
-  width: 71px;
-  height: 60px;
-  background: url('../images/contact-form-shapes-mobile.svg') no-repeat -105px -643px;
-}
-
 .contact-me .form-error {
   background: #f8d7da;
   color: #721c24;
@@ -325,10 +319,16 @@ p {
   font-size: 14px;
   display: none;
 }
-  
-  .contact-me .form-error.d-flex {
+
+.contact-me .form-error.d-flex {
   display: flex;
-} 
+}
+
+.contact-me .form-footer-bg div {
+  width: 71px;
+  height: 60px;
+  background: url('../images/contact-form-shapes-mobile.svg') no-repeat -105px -643px;
+}
 
 .btn {
   display: flex;
