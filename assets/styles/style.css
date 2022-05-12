@@ -317,6 +317,19 @@ p {
   background: url('../images/contact-form-shapes-mobile.svg') no-repeat -105px -643px;
 }
 
+.contact-me .form-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 2px 5px;
+  border-radius: 2px;
+  font-size: 14px;
+  display: none;
+}
+  
+  .contact-me .form-error.d-flex {
+  display: flex;
+} 
+
 .btn {
   display: flex;
   width: 200px;
