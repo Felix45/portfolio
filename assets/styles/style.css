@@ -42,6 +42,16 @@ a {
   overflow: hidden;
 }
 
+.header-fixed {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom: #e5e5e5;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
 @keyframes logo {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -137,6 +147,10 @@ p {
 .grid-item ul {
   display: flex;
   list-style-type: none;
+}
+
+.grid-item .project-role {
+  position: relative;
 }
 
 .grid-item .project-role li {

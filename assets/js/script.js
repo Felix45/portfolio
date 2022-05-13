@@ -12,3 +12,12 @@ const toggleMenu = () => {
 };
 
 menuItems.forEach((menuItem) => { menuItem.addEventListener('click', toggleMenu); });
+
+const displayFixedMenu = () => {
+  const header = document.querySelector('header');
+  const isFixed = this.window.scrollY > 200 ? header.classList.add('header-fixed') : header.classList.remove('header-fixed');
+
+  return isFixed;
+};
+
+window.addEventListener('scroll', displayFixedMenu);
