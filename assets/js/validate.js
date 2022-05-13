@@ -1,10 +1,10 @@
 const formData = {};
-const appForms = document.forms[0];
+const appForms = document.forms[];
 const userName = appForms.elements.username;
 const userEmail = appForms.elements.emailaddress;
 const userMessage = appForms.elements.message;
 
-const localStorageSave = (itemKey, ItemValue) => {
+cont localStorageSave = (itemKey, ItemValue) => {
   localStorage.setItem(itemKey, ItemValue);
 };
 
