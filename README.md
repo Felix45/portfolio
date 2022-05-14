@@ -11,6 +11,7 @@
 
 - HTML
 - CSS
+- JavaScript
 
 
 ## Live Demo
@@ -55,19 +56,15 @@ Start the http application server
 
 
 
-## Authors
+### Authors
 
-👤 **Felix Ouma**
+| 👤 Name | Github | Twitter | LinkedIn |
+|------|--------|---------|----------|
+|Felix Ouma|[@Felix45](https://github.com/Felix45)|[@Felix_Atonoh](https://twitter.com/Felix_Atonoh)|[LinkedIn](https://www.linkedin.com/in/felix-ouma-639766b0/)|
+|Tasnimul Hassan|[@tasnimulhasan07](https://github.com/tasnimulhasan07)|[@tasnimulhasan07](https://twitter.com/tasnimulhasan07)|[LinkedIn](https://www.linkedin.com/in/tasnimulhasan07)|
+|Dennis Mugiira|[@Mugiira-Kim](https://github.com/Mugiira-Kim)|[@BbmCru](https://twitter.com/BbmCru)|[LinkedIn](https://www.linkedin.com/in/mugiira-kim/) |
+|Hanningtone Machuka|[@HanningtoneM](https://github.com/HanningtoneM)| |
 
-- GitHub: [@Felix45](https://github.com/Felix45)
-- Twitter: [@Felix_Atonoh](https://twitter.com/Felix_Atonoh)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/felix-ouma-639766b0/)
-
-👤 **Tasnimul Hassan**
-
-- GitHub: [@tasnimulhasan07](https://github.com/tasnimulhasan07)
-- Twitter: [@tasnimulhasan07](https://twitter.com/tasnimulhasan07)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tasnimulhasan07)
 
 
 ## 🤝 Contributing

@@ -42,6 +42,16 @@ a {
   overflow: hidden;
 }
 
+.header-fixed {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom: #e5e5e5;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
 @keyframes logo {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -134,9 +144,18 @@ p {
   margin: 0 32px 0 0;
 }
 
+.menu ul li .active {
+  color: #00e;
+  border-bottom: 2px solid #00e;
+}
+
 .grid-item ul {
   display: flex;
   list-style-type: none;
+}
+
+.grid-item .project-role {
+  position: relative;
 }
 
 .grid-item .project-role li {
@@ -542,6 +561,10 @@ p {
 .overlay .grid-item h2 {
   font-size: 25px;
   margin: 6px 0 12px 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 767px) {

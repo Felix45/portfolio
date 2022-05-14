@@ -193,13 +193,12 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
 };
 
 const articleContainer = document.createElement('div');
-const cardContainer = document.querySelector('#port');
+const cardContainer = document.querySelector('#portfolio');
 
-for (let i = 0; i < projects.length; i += 1) {
-  const cardInstance = createProjectCard(projects[i], i + 1, true);
+projects.forEach((project, index) => {
+  const cardInstance = createProjectCard(project, index + 1, true);
   articleContainer.appendChild(cardInstance);
-}
-
+});
 cardContainer.appendChild(articleContainer);
 
 const closePopup = () => {
