@@ -144,6 +144,11 @@ p {
   margin: 0 32px 0 0;
 }
 
+.menu ul li .active {
+  color: #00e;
+  border-bottom: 2px solid #00e;
+}
+
 .grid-item ul {
   display: flex;
   list-style-type: none;
@@ -556,6 +561,10 @@ p {
 .overlay .grid-item h2 {
   font-size: 25px;
   margin: 6px 0 12px 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 767px) {
