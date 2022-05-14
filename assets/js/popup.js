@@ -195,7 +195,7 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
 const articleContainer = document.createElement('div');
 const cardContainer = document.querySelector('#portfolio');
 
-projects.forEach((project, index) => { 
+projects.forEach((project, index) => {
   const cardInstance = createProjectCard(project, index + 1, true);
   articleContainer.appendChild(cardInstance);
 });
