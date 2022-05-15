@@ -91,7 +91,7 @@ a {
 
 .intro {
   display: flex;
-  min-height: 718px;
+  min-height: 620px;
   flex-direction: column;
   background-color: #fff;
   background-image: url('../images/header-shapesmobile@2x.svg');
@@ -161,7 +161,7 @@ p {
 .grid-item .project-role li {
   color: #474e59;
   margin-left: 35px;
-  font-weight: 600;
+  font: 600 15px 'Poppins', sans-serif;
 }
 
 .grid-container {
@@ -544,14 +544,12 @@ p {
 }
 
 .overlay .grid-item .card-description p {
-  line-height: 32px;
+  font-size: 14px;
 }
 
 .overlay .overlay-close {
   width: 20px;
-  position: absolute;
-  right: 40px;
-  top: 7%;
+  float: right;
 }
 
 .overlay .d-flex {

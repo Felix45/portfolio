@@ -231,8 +231,9 @@ function showPopupWindow() {
 
   overlay.appendChild(modalContent);
   const tagsWrapper = document.querySelector('.overlay .tags-wrapper');
+  const heading = document.querySelector('.overlay article h2');
   tagsWrapper.appendChild(modalButtons);
-  overlay.childNodes[0].appendChild(overlayCloseBtn);
+  heading.appendChild(overlayCloseBtn);
 
   overlay.style.display = 'flex';
   document.querySelector('body').classList.toggle('fixed');
