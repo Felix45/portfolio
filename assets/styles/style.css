@@ -190,7 +190,7 @@ p {
   border-radius: 50%;
   position: absolute;
   margin-left: -25px;
-  margin-top: 8px;
+  margin-top: 6px;
   background-color: #c1c7d0;
 }
 
@@ -378,6 +378,7 @@ p {
 
 .grid-item .project-role-wrapper span {
   font-weight: bold;
+  margin-top: -1px;
 }
 
 .btn span::after {
@@ -439,7 +440,7 @@ p {
 }
 
 .overlay .tags-wrapper ul {
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -533,18 +534,20 @@ p {
 }
 
 .overlay .grid-item {
-  margin: 10px 0;
+  margin: 10px 0 0;
   height: 90vh;
   overflow-y: scroll;
+  padding-bottom: 0;
 }
 
 .overlay .grid-item .btn,
 .overlay .card-image {
-  margin-top: 20px;
+  margin: 10px 0 0 0;
 }
 
 .overlay .grid-item .card-description p {
   font-size: 14px;
+  margin: 10px 0 0;
 }
 
 .overlay .overlay-close {
@@ -558,7 +561,7 @@ p {
 
 .overlay .grid-item h2 {
   font-size: 25px;
-  margin: 6px 0 12px 0;
+  margin: 6px 0 6px 0;
 }
 
 .mt-1 {
