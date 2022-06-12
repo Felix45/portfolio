@@ -602,13 +602,23 @@ p {
     font-weight: normal;
   }
 
+  .overlay .grid-item .tags li {
+    margin: 0 5px 20px 0;
+  }
+
   .menu ul,
   .d-flex,
   .hide-ruby.grid-item .tags li:nth-child(2) {
     display: flex;
   }
 
+  .overlay .grid-item .card-description p {
+    margin: 0;
+    width: 60%;
+  }
+
   .overlay .tags-wrapper ul {
+    margin: 0;
     flex-wrap: wrap;
   }
 
@@ -845,18 +855,5 @@ p {
   .contact-me input,
   .contact-me textarea {
     border-radius: 0;
-  }
-
-  .overlay .grid-item .tags li {
-    margin: 0 5px 20px 0;
-  }
-
-  .overlay .tags-wrapper ul {
-    margin: 0;
-  }
-
-  .overlay .grid-item .card-description p {
-    margin: 0;
-    width: 60%;
   }
 }

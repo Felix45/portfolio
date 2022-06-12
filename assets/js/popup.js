@@ -138,16 +138,7 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
   Image.alt = project.alt;
   cardImage.appendChild(Image);
 
-  if (isDesktop) {
-    
-  } else {
-    /*cardImage.style.height = '568px';
-    cardImage.style.backgroundImage = `url(${project.image})`;
-    cardImage.style.backgroundRepeat = 'no-repeat';
-    cardImage.style.backgroundSize = '95%';
-    cardImage.style.backgroundPositionY = '-250px';
-    cardImage.style.backgroundPositionX = '18px';*/
-
+  if (!isDesktop) {
     cardImage.classList.remove('flex-item-2');
   }
   articleHolder.appendChild(cardImage);
