@@ -1,15 +1,16 @@
 const projects = [
   {
-    title: 'Tonic',
-    roles: { company: 'Canopy', position: ['Back End Dev', '2015'] },
-    image: 'assets/images/snapshootportfolio.svg',
-    alt: 'Canopy project screenshot',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    title: 'Awsome Books',
+    roles: { company: 'Library', position: ['Full Stack Dev', '2022'] },
+    image: 'assets/images/awsome-books.png',
+    alt: 'Awsomebooks project screenshot',
+    description: 'Is an online library application that enables users to keep track of books in their library by adding to and removing books from a list. Built with JavaScript ES6 syntax, HTML, and CSS.',
     skills: ['html', 'css', 'javascript'],
-    skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    livelink: { link: 'http://felix45.github.io/portfolio', text: 'See live' },
-    seesource: { link: 'http://github.com/felix45/portfolio', text: 'See Source' },
+    skillsModal: ['html', 'css', 'javascript', 'github'],
+    livelink: { link: 'http://felix45.github.io/awsome-books-v2', text: 'See live' },
+    seesource: { link: 'http://github.com/felix45/awsome-books-v2', text: 'See Source' },
     seeproject: 'See Project',
+    fulldesc: 'Is an online library application that enables users to keep track of books in their library by adding to and removing books from a list. Built with JavaScript ES6 syntax, HTML, and CSS.',
     htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description'] },
   },
 
@@ -24,6 +25,7 @@ const projects = [
     livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'https://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
+    fulldesc: '',
     htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
   },
 
@@ -38,6 +40,7 @@ const projects = [
     livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'https://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
+    fulldesc: '',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description'] },
   },
 
@@ -52,11 +55,11 @@ const projects = [
     livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'http://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
+    fulldesc: '',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
   },
 ];
 
-const dummyText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea';
 const mobileText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
 
 const listItems = (items) => {
@@ -131,19 +134,11 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
   const cardImage = document.createElement('div');
   cardImage.className = project.htmlClass.cardImage.join(' ');
   const Image = document.createElement('img');
+  Image.src = project.image;
+  Image.alt = project.alt;
+  cardImage.appendChild(Image);
 
-  if (isDesktop || document.documentElement.clientWidth <= 767) {
-    Image.src = project.image;
-    Image.alt = project.alt;
-    cardImage.appendChild(Image);
-  } else {
-    cardImage.style.height = '568px';
-    cardImage.style.backgroundImage = `url(${project.image})`;
-    cardImage.style.backgroundRepeat = 'no-repeat';
-    cardImage.style.backgroundSize = '95%';
-    cardImage.style.backgroundPositionY = '-250px';
-    cardImage.style.backgroundPositionX = '18px';
-
+  if (!isDesktop) {
     cardImage.classList.remove('flex-item-2');
   }
   articleHolder.appendChild(cardImage);
@@ -169,15 +164,16 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
   cardText.textContent = project.description;
 
   cardTagList.innerHTML = listItems(project.skills);
+  const overLayText = project.fulldesc ? project.fulldesc : mobileText;
 
   if (isDesktop) {
     cardDescription.appendChild(cardHeader);
     cardDescription.appendChild(cardRoleWrapper);
     cardText.textContent = project.description;
   } else if (document.documentElement.clientWidth <= 767) {
-    cardText.textContent = mobileText;
+    cardText.textContent = overLayText;
   } else {
-    cardText.textContent = dummyText;
+    cardText.textContent = overLayText;
     cardTagList.innerHTML = listItems(project.skillsModal);
   }
   cardTagWrapper.appendChild(cardTagList);

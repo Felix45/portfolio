@@ -475,6 +475,7 @@ p {
 .overlay .btn {
   width: 140px;
   font-size: 14px;
+  padding: 5px 12px;
 }
 
 .overlay .btn img {
@@ -551,7 +552,7 @@ p {
   width: 20px;
   position: absolute;
   right: 40px;
-  top: 7%;
+  top: 9%;
 }
 
 .overlay .d-flex {
@@ -578,7 +579,7 @@ p {
   }
 
   .overlay .card {
-    width: 90%;
+    width: 60%;
   }
 
   .overlay .card-image {
@@ -594,11 +595,15 @@ p {
   }
 
   .overlay .overlay-close {
-    right: 120px;
+    right: 23%;
   }
 
   .project-cards .grid-item .project-role li {
     font-weight: normal;
+  }
+
+  .overlay .grid-item .tags li {
+    margin: 0 5px 20px 0;
   }
 
   .menu ul,
@@ -607,7 +612,13 @@ p {
     display: flex;
   }
 
+  .overlay .grid-item .card-description p {
+    margin: 0;
+    width: 60%;
+  }
+
   .overlay .tags-wrapper ul {
+    margin: 0;
     flex-wrap: wrap;
   }
 
@@ -844,9 +855,5 @@ p {
   .contact-me input,
   .contact-me textarea {
     border-radius: 0;
-  }
-
-  .overlay .grid-item .card-description p {
-    margin: 0 36px 0 0;
   }
 }
