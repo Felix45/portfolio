@@ -72,6 +72,7 @@ const listItems = (items) => {
 const createImageButton = (project, dest, srcLink) => {
   const link = document.createElement('a');
   link.className = 'btn';
+  link.setAttribute('target', '_blank');
   link.textContent = `${dest.text} `;
   link.href = dest.link;
   const img = document.createElement('img');
