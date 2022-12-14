@@ -6,7 +6,7 @@ const projects = [
     alt: 'COVID-19 Tracker project screenshot',
     description: 'This web application provides statistical insights on COVID-19 cases around the world. The application allows users to filter through the information by different continents and countries.',
     skills: ['JSX', 'React', 'css', 'javascript', 'APIs'],
-    skillsModal: ['JSX', 'css', 'javascript', 'React', 'ruby', 'Bootstrap','APIs'],
+    skillsModal: ['JSX', 'css', 'javascript', 'React', 'ruby', 'Bootstrap', 'APIs'],
     livelink: { link: 'https://imaginative-liger-4aee95.netlify.app/', text: 'See live' },
     seesource: { link: 'https://github.com/Felix45/covid-stats', text: 'See Source' },
     seeproject: 'See Project',
@@ -59,8 +59,6 @@ const projects = [
     htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
   },
 ];
-
-const mobileText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
 
 const listItems = (items) => {
   let list = '';
