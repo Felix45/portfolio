@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #00e;
+}
+
 .flex-container,
 .d-flex,
 .flex-row {
