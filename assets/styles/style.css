@@ -200,6 +200,7 @@ p {
 
 .grid-item .card-image img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .grid-item h2 {
@@ -355,12 +356,11 @@ p {
 
 .btn {
   display: flex;
-  width: 200px;
+  width: 150px;
   align-items: center;
   justify-content: center;
   color: #3268f1;
-  padding: 12px 16px;
-  font-size: 17px;
+  padding: 10px;
   font-weight: 500;
   border-radius: 8px;
   margin: 0 0 20px;
@@ -539,7 +539,7 @@ p {
 
 .overlay .grid-item {
   margin: 10px 0;
-  height: 90vh;
+  height: 85vh;
   overflow-y: scroll;
 }
 
