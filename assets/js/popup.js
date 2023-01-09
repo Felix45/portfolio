@@ -1,63 +1,64 @@
 const projects = [
   {
-    title: 'Tonic',
-    roles: { company: 'Canopy', position: ['Back End Dev', '2015'] },
-    image: 'assets/images/snapshootportfolio.svg',
-    alt: 'Canopy project screenshot',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'css', 'javascript'],
-    skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    livelink: { link: 'http://felix45.github.io/portfolio', text: 'See live' },
-    seesource: { link: 'http://github.com/felix45/portfolio', text: 'See Source' },
+    title: 'COVID-19 Tracker',
+    roles: { company: 'Microverse', position: ['Full Stack Dev', '2022'] },
+    image: 'assets/images/covid.png',
+    alt: 'COVID-19 Tracker project screenshot',
+    description: 'This web application provides statistical insights on COVID-19 cases around the world. The application allows users to filter through the information by different continents and countries.',
+    skills: ['JSX', 'React', 'css', 'javascript', 'APIs'],
+    skillsModal: ['JSX', 'css', 'javascript', 'React', 'ruby', 'Bootstrap', 'APIs'],
+    livelink: { link: 'https://imaginative-liger-4aee95.netlify.app/', text: 'See live' },
+    seesource: { link: 'https://github.com/Felix45/covid-stats', text: 'See Source' },
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description'] },
-  },
-
-  {
-    title: 'Multi-Post Stories',
-    roles: { company: 'Facebook', position: ['Full Stack Dev', '2015'] },
-    image: 'assets/images/project-4.svg',
-    alt: 'Multi-Post stories project screenshot',
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
-    skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
-    seesource: { link: 'https://github.com/felix45/portfolio', text: 'See Source' },
-    seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
-  },
-
-  {
-    title: 'Facebook 360',
-    roles: { company: 'Facebook', position: ['Full Stack Dev', '2015'] },
-    image: 'assets/images/tonic.svg',
-    alt: 'Facebook 360 project screenshot',
-    description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
-    skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
-    seesource: { link: 'https://github.com/felix45/portfolio', text: 'See Source' },
-    seeproject: 'See Project',
+    fulldesc: '',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description'] },
   },
 
   {
-    title: 'Uber Navigation',
-    roles: { company: 'Uber', position: ['Lead Developer', '2018'] },
-    image: 'assets/images/multi-stories-post.svg',
-    alt: 'Uber Navigation project screenshot',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car..',
-    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
-    skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
-    seesource: { link: 'http://github.com/felix45/portfolio', text: 'See Source' },
+    title: 'Awsome Books',
+    roles: { company: 'Library', position: ['Full Stack Dev', '2022'] },
+    image: 'assets/images/awsomebooks.png',
+    alt: 'Awsomebooks project screenshot',
+    description: 'Is an online library application that enables users to keep track of books in their library by adding to and removing books from a list. Built with JavaScript ES6 syntax, HTML, and CSS.',
+    skills: ['html', 'css', 'javascript'],
+    skillsModal: ['html', 'css', 'javascript', 'github'],
+    livelink: { link: 'http://felix45.github.io/awsome-books-v2', text: 'See live' },
+    seesource: { link: 'http://github.com/felix45/awsome-books-v2', text: 'See Source' },
     seeproject: 'See Project',
+    fulldesc: 'Is an online library application that enables users to keep track of books in their library by adding to and removing books from a list. Built with JavaScript ES6 syntax, HTML, and CSS.',
+    htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description'] },
+  },
+
+  {
+    title: 'Conference Website',
+    roles: { company: 'Community Group', position: ['Full Stack Dev', '2022'] },
+    image: 'assets/images/adopt-an-orphan.png',
+    alt: 'Conference website project screenshot',
+    description: 'This is a responsive website that provides information and the goal of a community-based organization.',
+    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
+    skillsModal: ['html', 'css', 'javascript', 'Ruby'],
+    livelink: { link: 'https://felix45.github.io/adopt-an-orphan/', text: 'See live' },
+    seesource: { link: 'https://github.com/Felix45/adopt-an-orphan', text: 'See Source' },
+    seeproject: 'See Project',
+    fulldesc: '',
+    htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
+  },
+
+  {
+    title: 'Atari Breakout',
+    roles: { company: 'Microverse', position: ['Lead Developer', '2022'] },
+    image: 'assets/images/breakout.png',
+    alt: 'Uber Navigation project screenshot',
+    description: 'This is a browser game developed using JavaScript and HTML5 canvas. Its inspired by Atari Inc.s implementation of the same game.',
+    skills: ['Javascript', 'html5', 'css', 'html5 canvas'],
+    skillsModal: ['Javascript', 'html5', 'css', 'html5 canvas'],
+    livelink: { link: 'https://felix45.github.io/Breakout/', text: 'See live' },
+    seesource: { link: 'https://github.com/Felix45/Breakout', text: 'See Source' },
+    seeproject: 'See Project',
+    fulldesc: '',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
   },
 ];
-
-const dummyText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea';
-const mobileText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
 
 const listItems = (items) => {
   let list = '';
@@ -71,6 +72,7 @@ const listItems = (items) => {
 const createImageButton = (project, dest, srcLink) => {
   const link = document.createElement('a');
   link.className = 'btn';
+  link.setAttribute('target', '_blank');
   link.textContent = `${dest.text} `;
   link.href = dest.link;
   const img = document.createElement('img');
@@ -131,19 +133,11 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
   const cardImage = document.createElement('div');
   cardImage.className = project.htmlClass.cardImage.join(' ');
   const Image = document.createElement('img');
+  Image.src = project.image;
+  Image.alt = project.alt;
+  cardImage.appendChild(Image);
 
-  if (isDesktop || document.documentElement.clientWidth <= 767) {
-    Image.src = project.image;
-    Image.alt = project.alt;
-    cardImage.appendChild(Image);
-  } else {
-    cardImage.style.height = '568px';
-    cardImage.style.backgroundImage = `url(${project.image})`;
-    cardImage.style.backgroundRepeat = 'no-repeat';
-    cardImage.style.backgroundSize = '95%';
-    cardImage.style.backgroundPositionY = '-250px';
-    cardImage.style.backgroundPositionX = '18px';
-
+  if (!isDesktop) {
     cardImage.classList.remove('flex-item-2');
   }
   articleHolder.appendChild(cardImage);
@@ -169,15 +163,16 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
   cardText.textContent = project.description;
 
   cardTagList.innerHTML = listItems(project.skills);
+  const overLayText = project.fulldesc ? project.fulldesc : project.description;
 
   if (isDesktop) {
     cardDescription.appendChild(cardHeader);
     cardDescription.appendChild(cardRoleWrapper);
     cardText.textContent = project.description;
   } else if (document.documentElement.clientWidth <= 767) {
-    cardText.textContent = mobileText;
+    cardText.textContent = overLayText;
   } else {
-    cardText.textContent = dummyText;
+    cardText.textContent = overLayText;
     cardTagList.innerHTML = listItems(project.skillsModal);
   }
   cardTagWrapper.appendChild(cardTagList);
