@@ -196,11 +196,15 @@ projects.forEach((project, index) => {
 });
 cardContainer.appendChild(articleContainer);
 
-const closePopup = () => {
+const closePopup = (event) => {
   const overlay = document.querySelector('.overlay');
-  overlay.style.display = 'none';
-  overlay.innerHTML = '';
-  document.querySelector('body').classList.toggle('fixed');
+  const closeButton = document.querySelector('.overlay-close');
+
+  if (event.target === overlay || event.target === closeButton) {
+    overlay.style.display = 'none';
+    overlay.innerHTML = '';
+    document.querySelector('body').classList.toggle('fixed');
+  }
 };
 
 const overlayCloseButton = () => {
@@ -226,11 +230,13 @@ function showPopupWindow() {
 
   overlay.appendChild(modalContent);
   const tagsWrapper = document.querySelector('.overlay .tags-wrapper');
+  const heading = document.querySelector('.overlay article h2');
   tagsWrapper.appendChild(modalButtons);
-  overlay.childNodes[0].appendChild(overlayCloseBtn);
+  heading.appendChild(overlayCloseBtn);
 
   overlay.style.display = 'flex';
   document.querySelector('body').classList.toggle('fixed');
+  overlay.addEventListener('click', closePopup);
 }
 
 const btnProjects = document.querySelectorAll('.btn-project');
