@@ -1,5 +1,35 @@
 const projects = [
   {
+    title: 'Systems Change Playbook',
+    roles: { company: 'Start Network', position: ['Full Stack Dev', '2024'] },
+    image: 'assets/images/startnetwork.png',
+    alt: 'Systems Change Playbook project screenshot',
+    description: 'This playbook guide is an attempt to describe in more detail what Systems Change means in theory and practice.',
+    skills: ['PHP', 'CSS', 'Javascript'],
+    skillsModal: ['php', 'html', 'css', 'javascript', 'github'],
+    livelink: { link: 'https://systemschange.startnetwork.org/', text: 'See live' },
+    seesource: { link: '', text: 'See Source' },
+    seeproject: 'See Project',
+    fulldesc: 'This guide is an attempt to describe in more detail what this means in theory and practice. It sets out our early thinking on what we mean by systems change, and how we go about it. Offering some guidance, questions and tools to start using.',
+    htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description'] },
+  },
+
+  {
+    title: 'Movies Lite',
+    roles: { company: 'Personal Project', position: ['Full Stack Dev', '2023'] },
+    image: 'assets/images/movies-lite.png',
+    alt: 'Movies Lite website project screenshot',
+    description: 'A better place to watch movies online for free.',
+    skills: ['React', 'Ruby on rails', 'CSS', 'javascript'],
+    skillsModal: ['React', 'css', 'javascript', 'Ruby'],
+    livelink: { link: 'https://movies-lite.netlify.app/', text: 'See live' },
+    seesource: { link: 'https://github.com/Felix45/movies-lite', text: 'See Source' },
+    seeproject: 'See Project',
+    fulldesc: 'Just a better place to watch movies online for free.It allows you to watch movies online in high quality for free. No registration is required. The content is updated daily with fast streaming servers, multi-language subtitles supported. Just open and watch your favorite movies, tv-shows. We have almost any movie, tv-shows you want to watch!',
+    htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
+  },
+
+  {
     title: 'COVID-19 Tracker',
     roles: { company: 'Microverse', position: ['Full Stack Dev', '2022'] },
     image: 'assets/images/covid.png',
@@ -12,36 +42,6 @@ const projects = [
     seeproject: 'See Project',
     fulldesc: '',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description'] },
-  },
-
-  {
-    title: 'Awsome Books',
-    roles: { company: 'Library', position: ['Full Stack Dev', '2022'] },
-    image: 'assets/images/awsomebooks.png',
-    alt: 'Awsomebooks project screenshot',
-    description: 'Is an online library application that enables users to keep track of books in their library by adding to and removing books from a list. Built with JavaScript ES6 syntax, HTML, and CSS.',
-    skills: ['html', 'css', 'javascript'],
-    skillsModal: ['html', 'css', 'javascript', 'github'],
-    livelink: { link: 'http://felix45.github.io/awsome-books-v2', text: 'See live' },
-    seesource: { link: 'http://github.com/felix45/awsome-books-v2', text: 'See Source' },
-    seeproject: 'See Project',
-    fulldesc: 'Is an online library application that enables users to keep track of books in their library by adding to and removing books from a list. Built with JavaScript ES6 syntax, HTML, and CSS.',
-    htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description'] },
-  },
-
-  {
-    title: 'Conference Website',
-    roles: { company: 'Community Group', position: ['Full Stack Dev', '2022'] },
-    image: 'assets/images/adopt-an-orphan.png',
-    alt: 'Conference website project screenshot',
-    description: 'This is a responsive website that provides information and the goal of a community-based organization.',
-    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
-    skillsModal: ['html', 'css', 'javascript', 'Ruby'],
-    livelink: { link: 'https://felix45.github.io/adopt-an-orphan/', text: 'See live' },
-    seesource: { link: 'https://github.com/Felix45/adopt-an-orphan', text: 'See Source' },
-    seeproject: 'See Project',
-    fulldesc: '',
-    htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
   },
 
   {
