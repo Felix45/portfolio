@@ -26,6 +26,14 @@ a:visited {
   display: flex;
 }
 
+.d-none{
+  display: none;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
 .flex-container {
   padding: 14px 24px;
   flex-direction: column;
@@ -40,6 +48,10 @@ a:visited {
 
 .logo {
   animation: logo 2s ease-in;
+}
+
+.img-rounded {
+  border-radius: 100%;
 }
 
 .fixed {
@@ -579,6 +591,10 @@ p {
 @media screen and (min-width: 767px) {
   body {
     background-color: #e5e5e5;
+  }
+
+  .img-rounded.d-none {
+    display: block;
   }
 
   .menu-wrapper {
