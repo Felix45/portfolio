@@ -1,20 +1,5 @@
 const projects = [
   {
-    title: 'COVID-19 Tracker',
-    roles: { company: 'Microverse', position: ['Full Stack Dev', '2022'] },
-    image: 'assets/images/covid.png',
-    alt: 'COVID-19 Tracker project screenshot',
-    description: 'This web application provides statistical insights on COVID-19 cases around the world. The application allows users to filter through the information by different continents and countries.',
-    skills: ['JSX', 'React', 'css', 'javascript', 'APIs'],
-    skillsModal: ['JSX', 'css', 'javascript', 'React', 'ruby', 'Bootstrap', 'APIs'],
-    livelink: { link: 'https://imaginative-liger-4aee95.netlify.app/', text: 'See live' },
-    seesource: { link: 'https://github.com/Felix45/covid-stats', text: 'See Source' },
-    seeproject: 'See Project',
-    fulldesc: '',
-    htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description'] },
-  },
-
-  {
     title: 'Systems Change Playbook',
     roles: { company: 'Start Network', position: ['Full Stack Dev', '2024'] },
     image: 'assets/images/startnetwork.png',
@@ -42,6 +27,21 @@ const projects = [
     seeproject: 'See Project',
     fulldesc: 'Just a better place to watch movies online for free.It allows you to watch movies online in high quality for free. No registration is required. The content is updated daily with fast streaming servers, multi-language subtitles supported. Just open and watch your favorite movies, tv-shows. We have almost any movie, tv-shows you want to watch!',
     htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
+  },
+
+  {
+    title: 'COVID-19 Tracker',
+    roles: { company: 'Microverse', position: ['Full Stack Dev', '2022'] },
+    image: 'assets/images/covid.png',
+    alt: 'COVID-19 Tracker project screenshot',
+    description: 'This web application provides statistical insights on COVID-19 cases around the world. The application allows users to filter through the information by different continents and countries.',
+    skills: ['JSX', 'React', 'css', 'javascript', 'APIs'],
+    skillsModal: ['JSX', 'css', 'javascript', 'React', 'ruby', 'Bootstrap', 'APIs'],
+    livelink: { link: 'https://imaginative-liger-4aee95.netlify.app/', text: 'See live' },
+    seesource: { link: 'https://github.com/Felix45/covid-stats', text: 'See Source' },
+    seeproject: 'See Project',
+    fulldesc: '',
+    htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description'] },
   },
 
   {
