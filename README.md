@@ -59,7 +59,7 @@ Start the http application server
 ### Authors
 
 | 👤 Name | Github | Twitter | LinkedIn |
-|------|--------|---------|----------|
+|:------|:--------|:---------|:----------|
 |Felix Ouma|[@Felix45](https://github.com/Felix45)|[@Felix_Atonoh](https://twitter.com/Felix_Atonoh)|[LinkedIn](https://www.linkedin.com/in/felix-ouma-639766b0/)|
 |Tasnimul Hassan|[@tasnimulhasan07](https://github.com/tasnimulhasan07)|[@tasnimulhasan07](https://twitter.com/tasnimulhasan07)|[LinkedIn](https://www.linkedin.com/in/tasnimulhasan07)|
 |Dennis Mugiira|[@Mugiira-Kim](https://github.com/Mugiira-Kim)|[@BbmCru](https://twitter.com/BbmCru)|[LinkedIn](https://www.linkedin.com/in/mugiira-kim/) |
